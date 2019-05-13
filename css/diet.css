@@ -1,0 +1,595 @@
+body {
+   background-image: url('../img/background-long.jpg');
+   background-repeat: no-repeat;
+   background-position: top,center;
+   background-color: black;
+}
+
+.body-container {
+   width: 1440px;
+   height: 3200px;
+   margin: auto;
+   position: relative;
+}
+
+.intro {
+   width: 1440px;
+   height: 600px;
+}
+
+.title {
+   position: absolute;
+   top: 50px;
+   left: 50px;
+}
+
+.description-l {
+   position: relative;
+   top: 200px;
+   left: 200px;
+}
+
+.paragraph {
+   width: 800px;
+   position: absolute;
+   left: 120px;
+   top: 100px;
+}
+
+.description-r {
+   position: absolute;
+   top: 200px;
+   left: 600px;
+}
+
+.intro p {
+   color: white;
+   font-size: 13px;
+   font-weight: lighter;
+}
+
+.intro h1 {
+   color: #cccccc;
+   font-size: 300px;
+   font-weight: bolder;
+   opacity: 0.5;
+   filter: blur(20px);
+}
+
+.intro h2 {
+   color: white;
+   font-size: 60px;
+   font-weight: bold;
+}
+
+#blur-theory {
+   position: absolute;
+   top: 0px;
+   filter: blur(8px);
+}
+
+h3 {
+   color: white;
+   font-size: 20px;
+   font-weight: lighter;
+}
+
+.calcultor {
+   width: 1440px;
+   display: flex;
+   position: relative;
+}
+
+.gender {
+   width: 360px;
+   height: 260px;
+}
+
+.gender-background {
+   height: 260px;
+   background-color: #222222;
+   opacity: 0.08;
+   border-top: 5px solid white;
+   border-bottom: 5px solid white;
+}
+
+.selector {
+   position: relative;
+   top: -260px;
+}
+
+.gender-head {
+   position: absolute;
+   top: 0px;
+   right: 20px;
+}
+
+.gender-selector {
+   position: absolute;
+   top: 100px;
+   left: 55px;
+}
+
+.gender-selector select {
+   height: 60px;
+   width: 250px;
+   font-size: 25px;
+}
+
+.age {
+   width: 360px;
+   height: 260px;
+   position: relative;
+   background-color: #2993fe;
+   border-top: 5px solid #2993fe;
+   border-bottom: 5px solid #2993fe;
+}
+
+.age-head {
+   position: absolute;
+   top: 0px;
+   right: 20px;
+}
+
+.age input {
+   width: 220px;
+   border: none;
+   background: transparent;
+   border-bottom: 5px solid #fff;
+   outline: none;
+   font-size: 120px;
+   font-weight: bold;
+   position: absolute;
+   bottom: 0px;
+}
+
+.height {
+   width: 360px;
+   height: 260px;
+   position: relative;
+   background-color: #412248;
+   border-top: 5px solid #412248;
+   border-bottom: 5px solid #412248;
+}
+
+.height-head {
+   position: absolute;
+   top: 0px;
+   right: 20px;
+}
+
+.height input {
+   width: 220px;
+   border: none;
+   background: transparent;
+   border-bottom: 5px solid #fff;
+   outline: none;
+   font-size: 120px;
+   font-weight: bold;
+   position: absolute;
+   bottom: 0px;
+}
+
+.h3 {
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+}
+
+.h3 h3{
+   font-size: 80px;
+}
+
+.weight {
+   width: 360px;
+   height: 260px;
+   position: relative;
+   background-color: #141235;
+   border-top: 5px solid #141235;
+   border-bottom: 5px solid #141235;
+}
+
+.weight-head {
+   position: absolute;
+   top: 0px;
+   right: 20px;
+}
+
+.weight input {
+   width: 220px;
+   border: none;
+   background: transparent;
+   border-bottom: 5px solid #fff;
+   outline: none;
+   font-size: 120px;
+   font-weight: bold;
+   position: absolute;
+   bottom: 0px;
+}
+
+.calcultor-head1 {
+   position: absolute;
+}
+
+.calcultor-head1 h2 {
+   color: white;
+   font-size: 80px;
+   font-weight: bold;
+   filter: blur(8px);
+}
+
+.calcultor-head2 h2 {
+   color: white;
+   font-size: 80px;
+   font-weight: bold;
+}
+
+.buttom {
+   width: 1440px;
+   height: 110px;
+   position: relative;
+}
+
+.buttom button {
+   width: 200px;
+   height: 50px;
+   position: absolute;
+   left: 620px;
+   top: 30px;
+   border-radius: 15px;
+   font-size: 25px;
+}
+
+.bmr-graphic {
+   width: 1440px;
+   height: 500px;
+   position: relative;
+}
+
+.bmr-graphic-bg {
+   width: 1440px;
+   height: 500px;
+   background: #111111;
+   opacity: 0.5;
+   position: absolute;
+}
+
+.graphic-bg {
+   background-color: #cccccc;
+   width: 1000px;
+   height: 80px;
+   position: absolute;
+   left: 220px;
+   top: 120px;
+   border-radius: 30px;
+   filter: blur(2px);
+}
+
+#chart {
+   border-radius: 30px;
+   background-color: #2ecc71;
+   width: 0%;
+   height: 100%;
+}
+
+.graphc-after-cal {
+   width: 1000px;
+   height: 80px;
+   position: absolute;
+   left: 220px;
+   top: 120px;
+   border-radius: 30px;
+}
+
+.bmr-text {
+   position: absolute;
+   width: 1440px;
+   text-align: center;
+   top: 300px;
+}
+
+.bmr-text p {
+   font-size: 60px;
+   color: white;
+   font-weight: normal;
+}
+
+.bmr-text1 {
+   position: absolute;
+   width: 1440px;
+   text-align: center;
+   top: 300px;
+}
+
+.bmr-text1 p {
+   font-size: 60px;
+   color: white;
+   font-weight: normal;
+   filter: blur(6px);
+}
+
+#value1 {
+   color: pink;
+   text-decoration: none;
+}
+
+#value1-1 {
+   color: pink;
+   text-decoration: none;
+}
+
+.diet-planner {
+   width: 1440px;
+   height: 1320px;
+   position: relative;
+}
+
+.diet-planner-title {
+   position: absolute;
+   left: 50px;
+   top: 50px;
+   font-size: 60px;
+   color: white;
+   filter: blur(6px);
+}
+
+.diet-planner-title1 {
+   position: absolute;
+   left: 50px;
+   top: 50px;
+   font-size: 60px;
+   color: white;
+}
+
+.meal {
+   position: relative;
+   top: 200px;
+}
+
+.foodname {
+   position: absolute;
+   left: 100px;
+}
+
+.foodname ins {
+   position:relative;
+   top: -2px;
+   color: white;
+   text-decoration: none;
+   font-size: 25px;
+   display: block;
+   margin-bottom: 17.5px;
+}
+
+.food {
+   position: absolute;
+   left: 180px;
+}
+
+.food select {
+  width: 180px;
+  height: 30px;
+  display: block;
+  margin-bottom: 25px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.foodweight {
+   position: absolute;
+   left: 380px;
+}
+
+.foodweight input {
+   width: 80px;
+   height: 25px;
+   border-radius: 10px;
+   display: block;
+   margin-bottom: 30px;
+   font-size: 25px;
+}
+
+.gram {
+   position: absolute;
+   left: 480px;
+   top: -6px;
+}
+
+.gram p {
+   color: white;
+   font-size: 25px;
+   display: block;
+   margin-bottom: 17.5px;
+}
+
+.graphic-bar {
+   width: 740px;
+   position: absolute;
+   left: 580px;
+}
+
+.bar-holder {
+   height: 30px;
+   width: 100%;
+   border-radius: 10px;
+   margin-bottom: 25px;
+   background-color: #333333;
+   filter: blur(2px);
+}
+
+.bar-inner {
+   width: 740px;
+   position: absolute;
+   left: 580px;
+}
+
+#chart1, #chart2, #chart3, #chart4, #chart5 {
+   width: 0%;
+   height: 30px;
+   border-radius: 10px;
+   margin-bottom: 25px;
+   background-color: #ff3a55;
+}
+
+#chart6, #chart7, #chart8, #chart9, #chart10 {
+   width: 0%;
+   height: 30px;
+   border-radius: 10px;
+   margin-bottom: 25px;
+   background-color: #17debe;
+}
+
+#chart11, #chart12, #chart13, #chart14, #chart15 {
+   width: 0%;
+   height: 30px;
+   border-radius: 10px;
+   margin-bottom: 25px;
+   background-color: #ffe75d;
+}
+
+.diet-planner-buttom {
+   width: 1440px;
+   height: 110px;
+   position: relative;
+}
+
+.diet-planner-buttom button {
+   width: 200px;
+   height: 50px;
+   position: absolute;
+   left: 620px;
+   top: 1050px;
+   border-radius: 15px;
+   font-size: 25px;
+}
+
+.cal-text {
+   position: absolute;
+   width: 1440px;
+   text-align: center;
+   top: 1150px;
+}
+
+.cal-text p {
+   font-size: 60px;
+   color: white;
+   font-weight: normal;
+}
+
+.cal-text1 {
+   position: absolute;
+   width: 1440px;
+   text-align: center;
+   top: 1150px;
+}
+
+.cal-text1 p {
+   font-size: 60px;
+   color: white;
+   font-weight: normal;
+   filter: blur(6px);
+}
+
+#value2 {
+   color: pink;
+   text-decoration: none;
+}
+
+#value2-1 {
+   color: pink;
+   text-decoration: none;
+}
+
+.c-p-f-container {
+   width: 1440px;
+   position: relative;
+}
+
+.c-p-f {
+   width: 1440px;
+   position: absolute;
+   display: flex;
+}
+
+.datapool {
+   width: 300px;
+   text-align: right;
+}
+
+.c-p-f p {
+   font-size: 30px;
+   color: white;
+}
+
+.c-p-f-bg {
+   width: 1440px;
+   position: absolute;
+   display: flex;
+}
+
+.datapool-bg {
+   width: 300px;
+   text-align: right;
+}
+
+.datapool-bg p {
+   font-size: 30px;
+   color: white;
+   filter: blur(4px);
+}
+
+.c-bg {
+   position: relative;
+   left: 50px;
+   top: 15px;
+   width: 850px;
+   height: 25px;
+   border-radius: 10px;
+   margin-bottom: 35px;
+   background-color: #cccccc;
+   filter: blur(2px);
+}
+
+.c {
+   position: relative;
+   left: 50px;
+   top: 15px;
+   width: 850px;
+   height: 25px;
+   margin-bottom: 35px;
+}
+
+#carb-chart {
+   width: 0%;
+   height: 25px;
+   background-color: #17debe;
+   border-radius: 10px;
+}
+
+#protein-chart {
+   width: 0%;
+   height: 25px;
+   background-color: #ff3a55;
+   border-radius: 10px;
+}
+
+#fat-chart {
+   width: 0%;
+   height: 25px;
+   background-color: #ffe75d;
+   border-radius: 10px;
+}
+
+#total-chart {
+   width: 0%;
+   height: 25px;
+   background-color: #ed773c;
+   border-radius: 10px;
+}
+
+#bmr-chart {
+   width: 0%;
+   height: 25px;
+   background-color: #5e325c;
+   border-radius: 10px;
+}
