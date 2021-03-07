@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 2</title>
+  </head>
+  <style media="screen">
+    .answer1 div{
+      width: 200px;
+      height: 50px;
+      border-left: solid 2px black;
+      margin-top: 10px;
+      padding-left: 10px;
+    }
+
+    .answer2 div{
+      width: 200px;
+      height: 50px;
+      border-left: solid 2px black;
+      margin-top: 10px;
+      padding-left: 10px;
+    }
+
+    .answer3 div{
+      width: 200px;
+      height: 50px;
+      border-left: solid 2px black;
+      margin-top: 10px;
+      padding-left: 10px;
+    }
+
+    .answer4 div{
+      width: 200px;
+      height: 50px;
+      border-left: solid 2px black;
+      margin-top: 10px;
+      padding-left: 10px;
+    }
+
+    #result{
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+  </style>
+  <body>
+    <div class="question1">
+      <div>
+        <p>20 X = 100, X = ?</p>
+      </div>
+      <div class="answer1">
+        <div id="1right" onclick="answer1(1)">
+          5
+        </div>
+        <div id="1wrong1" onclick="answer1(2)">
+          10
+        </div>
+        <div id="1wrong2" onclick="answer1(3)">
+          3
+        </div>
+        <div id="1wrong3" onclick="answer1(4)">
+          7
+        </div>
+      </div>
+    </div>
+    <div class="question2">
+      <div>
+        <p>12 * 12 = X, X = ?</p>
+      </div>
+      <div class="answer2">
+        <div id="2wrong1" onclick="answer2(1)">
+          122
+        </div>
+        <div id="2right" onclick="answer2(2)">
+          144
+        </div>
+        <div id="2wrong2" onclick="answer2(3)">
+          138
+        </div>
+        <div id="2wrong3" onclick="answer2(4)">
+          164
+        </div>
+      </div>
+    </div>
+    <div class="question3">
+      <div>
+        <p>2 + X = 28</p>
+      </div>
+      <div class="answer3">
+        <div id="3wrong1" onclick="answer3(1)">
+          30
+        </div>
+        <div id="3wrong2" onclick="answer3(2)">
+          20
+        </div>
+        <div id="3wrong3" onclick="answer3(3)">
+          25
+        </div>
+        <div id="3right" onclick="answer3(4)">
+          26
+        </div>
+      </div>
+    </div>
+    <div class="question4">
+      <div>
+        <p>X * Y = 24, Y = 8, X = ?</p>
+      </div>
+      <div class="answer4">
+        <div id="4wrong1" onclick="answer4(1)">
+          4
+        </div>
+        <div id="4wrong2" onclick="answer4(2)">
+          8
+        </div>
+        <div id="4right" onclick="answer4(3)">
+          3
+        </div>
+        <div id="4wrong3" onclick="answer4(4)">
+          2
+        </div>
+      </div>
+    </div>
+    <div id="result">
+      <button onclick="result()">Result</button>
+
+    </div>
+  </body>
+
+  <script>
+    function answer1(right){
+      switch (right) {
+        case 1:
+          document.getElementById('1right').style.background = "green";
+          score1 = 25;
+          break;
+        case 2:
+          document.getElementById('1right').style.background = "green";
+          document.getElementById('1wrong1').style.background = "red";
+          score1 = 0;
+          break;
+        case 3:
+          document.getElementById('1right').style.background = "green";
+          document.getElementById('1wrong2').style.background = "red";
+          score1 = 0;
+          break;
+        case 4:
+          document.getElementById('1right').style.background = "green";
+          document.getElementById('1wrong3').style.background = "red";
+          score1 = 0;
+          break;
+        default:
+      }
+    }
+
+    function answer2(right){
+      switch (right) {
+        case 2:
+          document.getElementById('2right').style.background = "green";
+          score2 = 25;
+          break;
+        case 1:
+          document.getElementById('2right').style.background = "green";
+          document.getElementById('2wrong1').style.background = "red";
+          score2 = 0;
+          break;
+        case 3:
+          document.getElementById('2right').style.background = "green";
+          document.getElementById('2wrong2').style.background = "red";
+          score2 = 0;
+          break;
+        case 4:
+          document.getElementById('2right').style.background = "green";
+          document.getElementById('2wrong3').style.background = "red";
+          score2 = 0;
+          break;
+        default:
+      }
+    }
+
+    function answer3(right){
+      switch (right) {
+        case 4:
+          document.getElementById('3right').style.background = "green";
+          score3 = 25;
+          break;
+        case 1:
+          document.getElementById('3right').style.background = "green";
+          document.getElementById('3wrong1').style.background = "red";
+          score3 = 0;
+          break;
+        case 2:
+          document.getElementById('3right').style.background = "green";
+          document.getElementById('3wrong2').style.background = "red";
+          score3 = 0;
+          break;
+        case 3:
+          document.getElementById('3right').style.background = "green";
+          document.getElementById('3wrong3').style.background = "red";
+          score3 = 0;
+          break;
+        default:
+      }
+    }
+
+    function answer4(right){
+      switch (right) {
+        case 3:
+          document.getElementById('4right').style.background = "green";
+          score4 = 25;
+          break;
+        case 1:
+          document.getElementById('4right').style.background = "green";
+          document.getElementById('4wrong1').style.background = "red";
+          score4 = 0;
+          break;
+        case 2:
+          document.getElementById('4right').style.background = "green";
+          document.getElementById('4wrong2').style.background = "red";
+          score4 = 0;
+          break;
+        case 4:
+          document.getElementById('4right').style.background = "green";
+          document.getElementById('4wrong3').style.background = "red";
+          score4 = 0;
+          break;
+        default:
+      }
+    }
+
+    function result(){
+      var score = score1 + score2 + score3 +score4;
+      alert("Your score is " + score );
+
+    }
+
+  </script>
+
+</html>
