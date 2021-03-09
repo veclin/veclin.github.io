@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button onclick="student.call1()">Student's Age</button>
+    <button onclick="student.call2()">Student's Major</button>
+    <button onclick="student.call3()">Student's Minor</button>
+
+  </body>
+  <script>
+    var student = {
+      age: 20,
+      major: 'Design',
+      minor: 'None',
+      call1: function(){
+        alert("student is "+ this.age+" years old");
+      },
+      call2: function(){
+        alert("student is majored in "+ this.major);
+      },
+      call3: function(){
+        alert("student is minored in "+ this.minor);
+      }
+    }
+
+    function studentInfo(age, major, minor){
+      this.age = age;
+      this.major = major;
+      this.minor = minor;
+      /*
+      this.call1 = function(){
+        alert("student is "+ this.age+" years old");
+      };
+      this.call2 = function(){
+        alert("student is majored in "+ this.major);
+      };
+      this.call3 = function(){
+        alert("student is minored in "+ this.minor);
+      };
+      */
+    }
+
+    var Ve = new studentInfo('18', 'Graphic Design', 'Fine Art',);
+
+    for (x in Ve){
+      console.log(Ve[x]);
+    }
+
+
+
+
+  </script>
+</html>
