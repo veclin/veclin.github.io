@@ -26,7 +26,8 @@
       }
     }
 
-    function studentInfo(age, major, minor){
+    function studentInfo(name, age, major, minor){
+      this.name = name;
       this.age = age;
       this.major = major;
       this.minor = minor;
@@ -43,10 +44,15 @@
       */
     }
 
-    var Ve = new studentInfo('18', 'Graphic Design', 'Fine Art',);
+    var Ve = new studentInfo('Ve', '18', 'Graphic Design', 'Fine Art',);
+
+    var Lin = new studentInfo('Lin', '99', 'Wood Crafting', 'Sound Visualization');
 
     for (x in Ve){
       console.log(Ve[x]);
+    }
+    for (x in Lin){
+      console.log(Lin[x]);
     }
 
 
