@@ -335,27 +335,29 @@ body{
 
 }
 
-.bmr-text {
+#bmr-text {
    position: absolute;
    width: 900px;
    text-align: center;
    top: 20px;
+   display: none;
 }
 
-.bmr-text p {
+#bmr-text p {
    font-size: 30px;
    color: white;
    font-weight: normal;
 }
 
-.bmr-text1 {
+#bmr-text1 {
    position: absolute;
    width: 900px;
    text-align: center;
    top: 20px;
+   display: none;
 }
 
-.bmr-text1 p {
+#bmr-text1 p {
    font-size: 30px;
    color: white;
    font-weight: normal;
@@ -388,29 +390,29 @@ body{
 }
 
 #dock {
-  width: 310px;
-  height: 100px;
+  width: 370px;
+  height: 120px;
   position: absolute;
   bottom: 10px;
   left: 485px;
 }
 
 #dock-bg {
-  width: 310px;
-  height: 100px;
+  width: 370px;
+  height: 120px;
   border-radius: 20px;
   background-color: gray;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 #dock-icon {
-  width: 300px;
-  height: 100px;
-  position: absolute;
+  width: 350px;
+  height: 90px;
+  position: relative;
   display: flex;
   justify-content: space-around;
-  top: 5px;
-  left: 5px;
+  margin: auto;
+  top: -105px;
 }
 
 #graphic {

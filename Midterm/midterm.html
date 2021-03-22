@@ -91,10 +91,10 @@
            <div class="graphc-after-cal">
               <div id="chart"></div>
            </div>
-           <div class="bmr-text">
+           <div id="bmr-text">
               <p>Your BMR is <ins id="value1">0000.00</ins> Cal</p>
            </div>
-           <div class="bmr-text1">
+           <div id="bmr-text1">
               <p>Your BMR is <ins id="value1-1">0000.00</ins> Cal</p>
            </div>
         </div>
@@ -112,7 +112,7 @@
           <div id="nameInput">
             <label for="name">User Name</label><br>
             <input id="name" type="text" name="name" value=""><br>
-            <button onclick="openfile(1)">Submit</button>
+            <button onclick="openfile(1)">Log In</button>
           </div>
         </div>
       </div>
@@ -312,6 +312,8 @@
     val1 = document.getElementById("value1-1").innerHTML = z*10+6.25*y-5*x+Number(w);
     var variable = val1/80;
     document.getElementById('chart').style.width = variable + "%";
+    document.getElementById('bmr-text').style.display = "block";
+    document.getElementById('bmr-text1').style.display = "block";
     }
   }
 
@@ -340,8 +342,14 @@
       return false;
 
     }else {
-    document.getElementById('output').innerHTML = document.getElementById('name').value + "<br>" + "Age: " + document.getElementById('age').value + "<br>" + "Height: " + document.getElementById('height').value + " CM" + "<br>" + "Weight: " +
-    document.getElementById('weight').value + " KG" + "<br>" + "BMR: " + document.getElementById('value1').innerHTML + "<br>" + "<br>" + "Your Dietary Plan" + "<br>" + "......";
+    document.getElementById('output').innerHTML =
+      document.getElementById('name').value + "<br>"
+      + "Age: " + document.getElementById('age').value + "<br>"
+      + "Height: " + document.getElementById('height').value + " CM" + "<br>"
+      + "Weight: " + document.getElementById('weight').value + " KG" + "<br>"
+      + "BMR: " + document.getElementById('value1').innerHTML + "<br>" + "<br>"
+      + "Your Dietary Plan" + "<br>"
+      + "......";
 
     console.log(document.getElementById('output').innerHTML);
     }
