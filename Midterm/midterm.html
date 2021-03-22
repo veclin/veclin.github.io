@@ -208,14 +208,28 @@
         document.getElementById('print').style.display = "none";
         break;
       case 1:
+        if (document.getElementById('name').value == "") {
+          alert("Please log in.")
+          document.getElementById('file').style.display = "none";
+          document.getElementById('info').style.display = "block";
+          document.getElementById('print').style.display = "none";
+        }else{
         document.getElementById('file').style.display = "block";
         document.getElementById('info').style.display = "none";
         document.getElementById('print').style.display = "none";
+        }
         break;
       case 3:
+        if (document.getElementById('name').value == "") {
+          alert("Please log in.")
+          document.getElementById('file').style.display = "none";
+          document.getElementById('info').style.display = "block";
+          document.getElementById('print').style.display = "none";
+        }else{
         document.getElementById('print').style.display = "block";
         document.getElementById('info').style.display = "none";
         document.getElementById('file').style.display = "none";
+        }
       default:
 
     }
@@ -302,10 +316,35 @@
   }
 
   function printout() {
+    var v = document.getElementById('name').value;
+    var x = document.getElementById("age").value;
+    var y = document.getElementById("height").value;
+    var z = document.getElementById("weight").value;
+    var w = document.getElementById("gender").value;
+    if (x == "" || y == "" || z == "" || w == "") {
+      alert("No available data");
+
+      document.getElementById('file').style.display = "block";
+      document.getElementById('info').style.display = "none";
+      document.getElementById('print').style.display = "none";
+
+      return false;
+
+    } else if (v ==""){
+      alert("No available data");
+
+      document.getElementById('file').style.display = "none";
+      document.getElementById('info').style.display = "block";
+      document.getElementById('print').style.display = "none";
+
+      return false;
+
+    }else {
     document.getElementById('output').innerHTML = document.getElementById('name').value + "<br>" + "Age: " + document.getElementById('age').value + "<br>" + "Height: " + document.getElementById('height').value + " CM" + "<br>" + "Weight: " +
     document.getElementById('weight').value + " KG" + "<br>" + "BMR: " + document.getElementById('value1').innerHTML + "<br>" + "<br>" + "Your Dietary Plan" + "<br>" + "......";
 
     console.log(document.getElementById('output').innerHTML);
+    }
   }
 
 </script>
