@@ -1,0 +1,435 @@
+body{
+  background-color: #222222;
+}
+
+.sec-1 {
+  width: 1280px;
+  height: 975px;
+  background-color: white;
+  position: relative;
+  margin: auto;
+}
+
+#background-color-selector {
+  width: 180px;
+  height: 180px;
+  background-color: pink;
+  position: fixed;
+  top: 160px;
+  left: 0px;
+}
+
+#background-color-selector div {
+  width: 90px;
+  height: 90px;
+  display: flex;
+}
+
+#window {
+  position: absolute;
+}
+
+#file {
+  position: absolute;
+  width: 1140px;
+  height: 800px;
+  background: white;
+  position: relative;
+  margin: auto;
+  top: 40px;
+  border: solid 1px white;
+  display: none;
+  background-image: url('../img/innerbg1.jpg');
+  background-repeat: no-repeat;
+  background-position: top,center;
+}
+
+#info {
+  position: absolute;
+  width: 1140px;
+  height: 800px;
+  background: white;
+  position: relative;
+  margin: auto;
+  top: 40px;
+  border: solid 1px white;
+  display: none;
+  background-image: url('../img/innerbg1.jpg');
+  background-repeat: no-repeat;
+  background-position: top,center;
+}
+
+#print {
+  position: absolute;
+  width: 1140px;
+  height: 800px;
+  background: white;
+  position: relative;
+  margin: auto;
+  top: 40px;
+  border: solid 1px white;
+  display: none;
+  background: #244444;
+}
+
+#inputWindow {
+  width: 500px;
+  height: 200px;
+  position: relative;
+  margin: auto;
+  top: 260px;
+}
+
+#nameInput0 {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  background: gray;
+  border-radius: 20px;
+  opacity: 0.2;
+}
+
+#nameInput {
+  width: 440px;
+  height: 100px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  text-align: center;
+}
+
+#nameInput label {
+  font-size: 20px;
+  color: white;
+}
+
+#nameInput input{
+  font-size: 20px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+#nameInput button{
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+#closeBar {
+  width: 1140px;
+  height: 20px;
+  background: white;
+}
+
+#closeButt{
+  width: 14px;
+  height: 14px;
+  border-radius: 10px;
+  background-color: red;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+
+#theory {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 100px;
+  left: 120px;
+}
+
+#fileimg h1 {
+  position: absolute;
+  top: 220px;
+  left: 450px;
+  color: #cccccc;
+  font-size: 250px;
+  font-weight: bolder;
+  opacity: 0.5;
+  filter: blur(20px);
+}
+
+#blur-theory {
+   filter: blur(8px);
+   color: white;
+   font-size: 40px;
+   font-weight: bold;
+   position: absolute;
+   top: 100px;
+   left: 120px;
+}
+
+#paragraph {
+   width: 900px;
+   position: absolute;
+   left: 120px;
+   top: 180px;
+   color: white;
+   font-size: 13px;
+   font-weight: 100;
+}
+
+.calcultor {
+   width: 900px;
+   display: flex;
+   position: relative;
+   top: 400px;
+   left: 120px;
+}
+
+.gender {
+   width: 225px;
+   height: 150px;
+}
+
+.gender-selector select {
+   height: 40px;
+   width: 200px;
+   font-size: 18px;
+   position: absolute;
+   top: 100px;
+}
+
+.age {
+   width: 225px;
+   height: 140px;
+   position: relative;
+   background-color: #2993fe;
+   border-top: 5px solid #2993fe;
+   border-bottom: 5px solid #2993fe;
+}
+
+.age input {
+   width: 130px;
+   border: none;
+   background: transparent;
+   border-bottom: 5px solid #fff;
+   outline: none;
+   font-size: 50px;
+   font-weight: bold;
+   position: absolute;
+   bottom: 0px;
+}
+
+.height {
+   width: 225px;
+   height: 140px;
+   position: relative;
+   background-color: #412248;
+   border-top: 5px solid #412248;
+   border-bottom: 5px solid #412248;
+}
+
+.height input {
+   width: 130px;
+   border: none;
+   background: transparent;
+   border-bottom: 5px solid #fff;
+   outline: none;
+   font-size: 50px;
+   font-weight: bold;
+   position: absolute;
+   bottom: 0px;
+}
+
+.weight {
+   width: 225px;
+   height: 140px;
+   position: relative;
+   background-color: #141235;
+   border-top: 5px solid #141235;
+   border-bottom: 5px solid #141235;
+}
+
+
+.weight input {
+   width: 130px;
+   border: none;
+   background: transparent;
+   border-bottom: 5px solid #fff;
+   outline: none;
+   font-size: 50px;
+   font-weight: bold;
+   position: absolute;
+   bottom: 0px;
+}
+
+.calcultor-head1 {
+   position: absolute;
+   left: 10px;
+}
+
+.calcultor-head2 {
+   position: absolute;
+   left: 10px;
+}
+
+.calcultor-head1 h2 {
+   color: white;
+   font-size: 40px;
+   font-weight: bold;
+   filter: blur(8px);
+}
+
+.calcultor-head2 h2 {
+   color: white;
+   font-size: 40px;
+   font-weight: bold;
+}
+
+.h3 {
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+}
+
+.h3 h3{
+   font-size: 50px;
+}
+
+.buttom {
+   width: 1140px;
+   height: 50px;
+   position: relative;
+   top: 420px;
+}
+
+.buttom button {
+   width: 80px;
+   height: 30px;
+   border-radius: 10px;
+   font-size: 15px;
+   position: absolute;
+   left: 530px;
+}
+
+.bmr-graphic {
+   width: 900px;
+   height: 200px;
+   position: relative;
+   top: 480px;
+   left: 120px;
+}
+
+.graphic-bg {
+   background-color: #cccccc;
+   width: 900px;
+   height: 10px;
+   border-radius: 30px;
+   position: absolute;
+}
+
+#chart {
+   border-radius: 30px;
+   background-color: #2ecc71;
+   width: 0%;
+   height: 100%;
+}
+
+.graphc-after-cal {
+   width: 900px;
+   height: 10px;
+   position: absolute;
+   border-radius: 30px;
+
+}
+
+.bmr-text {
+   position: absolute;
+   width: 900px;
+   text-align: center;
+   top: 20px;
+}
+
+.bmr-text p {
+   font-size: 30px;
+   color: white;
+   font-weight: normal;
+}
+
+.bmr-text1 {
+   position: absolute;
+   width: 900px;
+   text-align: center;
+   top: 20px;
+}
+
+.bmr-text1 p {
+   font-size: 30px;
+   color: white;
+   font-weight: normal;
+   filter: blur(6px);
+}
+
+#value1 {
+   color: pink;
+   text-decoration: none;
+}
+
+#value1-1 {
+   color: pink;
+   text-decoration: none;
+}
+
+#generateButt {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+
+#output {
+  position: absolute;
+  top: 120px;;
+  left: 30px;
+  font-size: 30px;
+  color: yellow;
+  line-height: 1.6;
+}
+
+#dock {
+  width: 310px;
+  height: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 485px;
+}
+
+#dock-bg {
+  width: 310px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: gray;
+  opacity: 0.4;
+}
+
+#dock-icon {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: 5px;
+  left: 5px;
+}
+
+#graphic {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  background-image: url('../img/info_icon.jpg')
+}
+
+#graphic1 {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  background-image: url('../img/bmr_icon.jpg')
+}
+
+#graphic3 {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  background-image: url('../img/print_icon.jpg')
+}

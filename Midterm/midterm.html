@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/homepage.css">
+  <title>VE C. LIN</title>
+</head>
+<body>
+  <div class="sec-1">
+    <div id="window">
+      <div id="windowbg">
+        <img src="img/bg1.jpg" alt="" onclick="closefile()">
+      </div>
+    </div>
+    <div id="file">
+      <div id="fileimg">
+        <div id="closeBar">
+          <div id="closeButt" onclick="closefile()"></div>
+        </div>
+        <h2 id="theory">BMR Theory</h2>
+        <h2 id="blur-theory">BMR Theory</h2>
+        <div id="paragraph">
+           <p>Basal metabolic rate (BMR) refers to the energy metabolism rate of the human body in the state of being awake and extremely quiet, not affected by muscle activity, environmental temperature, food and mental stress.</p>
+           <br>
+           <p>The basal metabolic rate has a very large effect on weight loss. The right amount of exercise per day helps to increase the body's basal metabolic rate, while dieting (extremely hunger strike) reduces the basal metabolic rate. The basal metabolic rate can be roughly calculated by sex, age, height and weight.</p>
+           <br>
+           <p>* This basic metabolic calculation tool is only applicable to the general situation. If you need to get the actual basal metabolism of your individual, please use NICE weight loss service.</p>
+        </div>
+        <h1>BMR</h1>
+        <div class="calcultor">
+           <div class="gender">
+              <div class="selector">
+                 <div class="calcultor-head1">
+                    <h2>Gender</h2>
+                 </div>
+                 <div class="calcultor-head2">
+                    <h2>Gender</h2>
+                 </div>
+                 <div class="gender-selector">
+                    <select id="gender">
+                       <option selected="true" disabled="disabled" value = "">Select-Your-Gender</option>
+                       <option value="5">Male</option>
+                       <option value="-161">Female</option>
+                    </select>
+                 </div>
+              </div>
+           </div>
+           <div class="age">
+              <div class="calcultor-head1">
+                 <h2>Age</h2>
+              </div>
+              <div class="calcultor-head2">
+                 <h2>Age</h2>
+              </div>
+              <input type="number" id="age" value="">
+           </div>
+           <div class="height">
+              <div class="calcultor-head1">
+                 <h2>Height</h2>
+              </div>
+              <div class="calcultor-head2">
+                 <h2>Height</h2>
+              </div>
+              <input type="number" id="height" value="">
+              <div class="h3">
+                 <h3>CM</h3>
+              </div>
+           </div>
+           <div class="weight">
+              <div class="calcultor-head1">
+                 <h2>Weight</h2>
+              </div>
+              <div class="calcultor-head2">
+                 <h2>Weight</h2>
+              </div>
+              <input type="number" id="weight" value="">
+              <div class="h3">
+                 <h3>KG</h3>
+              </div>
+           </div>
+        </div>
+        <div class="buttom">
+           <button onclick="BMR()">Calculate</button>
+        </div>
+        <div class="bmr-graphic">
+           <div class="graphic-bg">
+           </div>
+           <div class="graphc-after-cal">
+              <div id="chart"></div>
+           </div>
+           <div class="bmr-text">
+              <p>Your BMR is <ins id="value1">0000.00</ins> Cal</p>
+           </div>
+           <div class="bmr-text1">
+              <p>Your BMR is <ins id="value1-1">0000.00</ins> Cal</p>
+           </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="info">
+      <div id="fileimg">
+        <div id="closeBar">
+          <div id="closeButt" onclick="closefile()"></div>
+        </div>
+        <div id="inputWindow">
+          <div id="nameInput0">
+          </div>
+          <div id="nameInput">
+            <label for="name">User Name</label><br>
+            <input id="name" type="text" name="name" value=""><br>
+            <button onclick="openfile(1)">Submit</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="print">
+      <div id="fileimg">
+        <div id="closeBar">
+          <div id="closeButt" onclick="closefile()"></div>
+        </div>
+        <div id="generateButt">
+          <button onclick="printout()">Generate</button>
+        </div>
+        <div id="dataOutput">
+          <p id="output"></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="dock">
+      <div id="dock-bg"></div>
+      <div id="dock-icon">
+        <div id="graphic" onclick="openfile(0)">
+          <a></a>
+        </div>
+        <div id="graphic1" onclick="openfile(1)">
+          <a></a>
+        </div>
+        <div id="graphic3" onclick="openfile(3)">
+          <a></a>
+        </div>
+      </div>
+    </div>
+    <div id="background-color-selector">
+      <div>
+        <div>
+          <img src="img/bg1s.jpg" alt="" onclick="bgselector(1)">
+        </div>
+        <div>
+          <img src="img/bg3s.jpg" alt="" onclick="bgselector(2)">
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="img/bg2s.jpg" alt="" onclick="bgselector(3)">
+        </div>
+        <div>
+          <img src="img/bg4s.jpg" alt="" onclick="bgselector(4)">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript">
+  function bgselector(bg){
+    bgimg1 = '<img src="img/bg1.jpg" alt="" onclick="closefile()">';
+    bgimg2 = '<img src="img/bg2.jpg" alt="" onclick="closefile()">';
+    bgimg3 = '<img src="img/bg3.jpg" alt="" onclick="closefile()">';
+    bgimg4 = '<img src="img/bg4.jpg" alt="" onclick="closefile()">';
+
+    switch (bg) {
+      case 1:
+        document.getElementById('windowbg').innerHTML = bgimg1;
+        break;
+      case 2:
+        document.getElementById('windowbg').innerHTML = bgimg3;
+        break;
+      case 3:
+        document.getElementById('windowbg').innerHTML = bgimg2;
+        break;
+      case 4:
+        document.getElementById('windowbg').innerHTML = bgimg4;
+        break;
+      default:
+        document.getElementById('windowbg').innerHTML = bgimg1;
+
+    }
+  }
+
+  function closefile(){
+    document.getElementById('file').style.display = "none";
+    document.getElementById('info').style.display = "none";
+    document.getElementById('print').style.display = "none";
+  }
+
+  function openfile(appWindow){
+    switch (appWindow) {
+      case 0:
+        document.getElementById('info').style.display = "block";
+        document.getElementById('file').style.display = "none";
+        document.getElementById('print').style.display = "none";
+        break;
+      case 1:
+        document.getElementById('file').style.display = "block";
+        document.getElementById('info').style.display = "none";
+        document.getElementById('print').style.display = "none";
+        break;
+      case 3:
+        document.getElementById('print').style.display = "block";
+        document.getElementById('info').style.display = "none";
+        document.getElementById('file').style.display = "none";
+      default:
+
+    }
+  }
+
+  // function next(){
+  //   var project = ['<img src="img/p1.jpg" alt="">', '<img src="img/p2.jpg" alt="">', '<img src="img/p3.jpg" alt="">', '<img src="img/p4.jpg" alt="">', '<img src="img/p5.jpg" alt="">']
+  //   var buttonVal = document.getElementById('nextProject');
+  //   var value = buttonVal.value
+  //
+  //   switch (value) {
+  //     case "0":
+  //       document.getElementById('fileimg').innerHTML = project[1];
+  //       buttonVal.value = "1";
+  //       break;
+  //     case "1":
+  //       document.getElementById('fileimg').innerHTML = project[2];
+  //       buttonVal.value = "2";
+  //       break;
+  //     case "2":
+  //       document.getElementById('fileimg').innerHTML = project[3];
+  //       buttonVal.value = "3";
+  //       break;
+  //     case "3":
+  //       document.getElementById('fileimg').innerHTML = project[4];
+  //       buttonVal.value = "4";
+  //       break;
+  //     case "4":
+  //       document.getElementById('fileimg').innerHTML = project[0];
+  //       buttonVal.value = "0";
+  //       break;
+  //     default:
+  //   }
+  // }
+  //
+  // function last(){
+  //   var project = ['<img src="img/p1.jpg" alt="">', '<img src="img/p2.jpg" alt="">', '<img src="img/p3.jpg" alt="">', '<img src="img/p4.jpg" alt="">', '<img src="img/p5.jpg" alt="">']
+  //   var buttonVal1 = document.getElementById('nextProject');
+  //   var value1 = buttonVal1.value
+  //
+  //   switch (value1) {
+  //     case "0":
+  //       document.getElementById('fileimg').innerHTML = project[4];
+  //       buttonVal1.value = "4";
+  //       break;
+  //     case "1":
+  //       document.getElementById('fileimg').innerHTML = project[0];
+  //       buttonVal1.value = "0";
+  //       break;
+  //     case "2":
+  //       document.getElementById('fileimg').innerHTML = project[1];
+  //       buttonVal1.value = "1";
+  //       break;
+  //     case "3":
+  //       document.getElementById('fileimg').innerHTML = project[2];
+  //       buttonVal1.value = "2";
+  //       break;
+  //     case "4":
+  //       document.getElementById('fileimg').innerHTML = project[3];
+  //       buttonVal1.value = "3";
+  //       break;
+  //     default:
+  //   }
+  // }
+
+  function BMR() {
+    var val1 = 0;
+    var val2 = 0;
+    var x = document.getElementById("age").value;
+    var y = document.getElementById("height").value;
+    var z = document.getElementById("weight").value;
+    var w = document.getElementById("gender").value;
+
+    if (x == "" || y == "" || z == "" || w == "") {
+      alert("Please fill all the boxes");
+      return false;
+    } else {
+
+    val1 = document.getElementById("value1").innerHTML = z*10+6.25*y-5*x+Number(w);
+    val1 = document.getElementById("value1-1").innerHTML = z*10+6.25*y-5*x+Number(w);
+    var variable = val1/80;
+    document.getElementById('chart').style.width = variable + "%";
+    }
+  }
+
+  function printout() {
+    document.getElementById('output').innerHTML = document.getElementById('name').value + "<br>" + "Age: " + document.getElementById('age').value + "<br>" + "Height: " + document.getElementById('height').value + " CM" + "<br>" + "Weight: " +
+    document.getElementById('weight').value + " KG" + "<br>" + "BMR: " + document.getElementById('value1').innerHTML + "<br>" + "<br>" + "Your Dietary Plan" + "<br>" + "......";
+
+    console.log(document.getElementById('output').innerHTML);
+  }
+
+</script>
+</html>
