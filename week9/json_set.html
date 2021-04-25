@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </head>
+  <body>
+    <div id="foodish">
+
+    </div>
+  </body>
+  <script>
+    foodImage = $.get("https://foodish-api.herokuapp.com/api/", function(data, status){
+      console.log(data);
+      image = "<img src='" + data["image"] + "'>";
+      $("#foodish").append(image);
+    });
+  </script>
+</html>
