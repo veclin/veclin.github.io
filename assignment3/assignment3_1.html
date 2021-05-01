@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 3</title>
+  </head>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <style media="screen">
+    #tabs {
+      margin: auto;
+      width: 1140px;
+    }
+
+
+  </style>
+  <body>
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Big Hall</a></li>
+        <li><a href="#tabs-2">Smokey Club</a></li>
+        <li><a href="#tabs-3">Little Cafe</a></li>
+      </ul>
+      <div id="tabs-1">
+        <p>hkjhk</p>
+      </div>
+      <div id="tabs-2">
+        <p>hkashd</p>
+      </div>
+      <div id="tabs-3">
+        <p>kjgasdhk</p>
+      </div>
+    </div>
+
+
+    <script>
+      $( function() {
+        $( "#tabs" ).tabs();
+      } );
+    </script>
+  </body>
+</html>

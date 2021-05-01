@@ -2,42 +2,139 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Assignment 3</title>
+    <title></title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="json.js"></script>
   </head>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <style media="screen">
-    #tabs {
-      margin: auto;
-      width: 1140px;
+    .ui-tabs-vertical {
+      width: 55em;
     }
 
+    .ui-tabs-vertical .ui-tabs-nav {
+      padding: .2em .1em .2em .2em;
+      float: left;
+      width: 14em;
+    }
+
+    .ui-tabs-vertical .ui-tabs-nav li {
+      clear: left;
+      width: 100%;
+      border-bottom-width: 1px !important;
+      border-right-width: 0 !important;
+      margin: 0 -1px .2em 0;
+    }
+
+    .ui-tabs-vertical .ui-tabs-nav li a {
+      display: block;
+    }
+
+    .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+      padding-bottom: 0;
+      padding-right: .1em;
+      border-right-width: 1px;
+    }
+
+    .ui-tabs-vertical .ui-tabs-panel {
+      padding: 1em;
+      float: left;
+    }
 
   </style>
+
   <body>
-    <div id="tabs">
+    <div id="tabs" style="width:99%; height:100%">
       <ul>
-        <li><a href="#tabs-1">Big Hall</a></li>
-        <li><a href="#tabs-2">Smokey Club</a></li>
-        <li><a href="#tabs-3">Little Cafe</a></li>
+        <li><a href="#tabs-1">Big Hall -- New York, NY</a></li>
+        <li><a href="#tabs-2">Smokey Club -- Queens, NY</a></li>
+        <li><a href="#tabs-3">Little Café -- Brooklyn, NY</a></li>
       </ul>
       <div id="tabs-1">
-        <p>hkjhk</p>
+        <div id="accordion-1">
+
+        </div>
       </div>
       <div id="tabs-2">
-        <p>hkashd</p>
+        <div id="accordion-2">
+
+        </div>
       </div>
       <div id="tabs-3">
-        <p>kjgasdhk</p>
+        <div id="accordion-3">
+
+        </div>
       </div>
     </div>
-
-
-    <script>
-      $( function() {
-        $( "#tabs" ).tabs();
-      } );
-    </script>
   </body>
+
+  <script>
+//sort events by date
+    shows.sort(function(a,b){
+      return new Date(a.date) - new Date(b.date);
+    });
+
+//tabs set up
+    $(document).ready(function(){
+      var myOptions1 = {
+        collapsible: true,
+        active: false,
+      };
+      var myOptions2 = {
+        collapsible: true,
+      };
+      $( "#accordion-1" ).accordion(myOptions2);
+      $( "#accordion-2" ).accordion(myOptions2);
+      $( "#accordion-3" ).accordion(myOptions2);
+      $("#tabs").tabs(myOptions1);
+    });
+
+//tabs left side
+    $( function() {
+      $("#tabs").tabs().addClass(
+        "ui-tabs-vertical ui-helper-clearfix"
+      );
+
+      $("#tabs li").removeClass(
+        "ui-corner-top").addClass(
+          "ui-corner-left"
+      );
+    });
+
+//list events in different venues
+    var x = "";
+    var y = "";
+    var z = "";
+    for (venue in shows) {
+      if (shows[venue].venue == "Big Hall") {
+        x += "<h2>" + shows[venue].artist + "</h2>" + "<div>" + "Data:" + " " + shows[venue].date + "<br>" + "Time:" + " " + shows[venue].show_time + "<br>" +
+        "Price:" + " " + shows[venue].price + " " + shows[venue].currency + "<br>" + "<br>" + "<button>" + "Buy ticket" + "</button>" + "<br>" +
+        "<p>" + "Note: it will direct you to performer’s website" + "</p>"
+        + "</div>";
+      }
+    }
+    for (venue in shows) {
+      if (shows[venue].venue == "Smokey Club") {
+        y += "<h2>" + shows[venue].artist + "</h2>" + "<div>" + "Data:" + " " + shows[venue].date + "<br>" + "Time:" + " " + shows[venue].show_time + "<br>" +
+        "Price:" + " " + shows[venue].price + " " + shows[venue].currency + "<br>" + "<br>" + "<button>" + "Buy ticket" + "</button>" + "<br>" +
+        "<p>" + "Note: it will direct you to performer’s website" + "</p>"
+        + "</div>";
+      }
+    }
+    for (venue in shows) {
+      if (shows[venue].venue == "Little Café") {
+        z += "<h2>" + shows[venue].artist + "</h2>" + "<div>" + "Data:" + " " + shows[venue].date + "<br>" + "Time:" + " " + shows[venue].show_time + "<br>" +
+        "Price:" + " " + shows[venue].price + " " + shows[venue].currency + "<br>" + "<br>" + "<button>" + "Buy ticket" + "</button>" + "<br>" +
+        "<p>" + "Note: it will direct you to performer’s website" + "</p>"
+        + "</div>";
+      }
+    }
+    document.getElementById("accordion-1").innerHTML = x;
+    document.getElementById("accordion-2").innerHTML = y;
+    document.getElementById("accordion-3").innerHTML = z;
+
+    // console.log(shows);
+
+  </script>
 </html>
