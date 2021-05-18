@@ -67,12 +67,21 @@
         </div>
       </div>
     </div>
+    <div id="recent1">
+
+    </div>
+    <div id="recent2">
+
+    </div>
+    <div id="recent3">
+
+    </div>
   </body>
 
   <script>
 //sort events by date
     shows.sort(function(a,b){
-      return new Date(a.date) - new Date(b.date);
+      return new Date(b.date) - new Date(a.date);
     });
 
 //tabs set up
@@ -130,11 +139,11 @@
         + "</div>";
       }
     }
+
     document.getElementById("accordion-1").innerHTML = x;
     document.getElementById("accordion-2").innerHTML = y;
     document.getElementById("accordion-3").innerHTML = z;
 
-    // console.log(shows);
 
   </script>
 </html>

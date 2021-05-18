@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/homepage.css">
+  <title>VE C. LIN</title>
+  <script src="food.js"></script>
+</head>
+<body>
+  <div class="sec-1">
+    <div id="window">
+      <div id="windowbg">
+        <img src="img/bg1.jpg" alt="" onclick="closefile()">
+      </div>
+    </div>
+    <div id="file">
+      <div id="fileimg">
+        <div id="closeBar">
+          <div id="closeButt" onclick="closefile()"></div>
+        </div>
+        <h2 id="theory">BMR Theory</h2>
+        <h2 id="blur-theory">BMR Theory</h2>
+        <div id="paragraph">
+           <p>Basal metabolic rate (BMR) refers to the energy metabolism rate of the human body in the state of being awake and extremely quiet, not affected by muscle activity, environmental temperature, food and mental stress.</p>
+           <br>
+           <p>The basal metabolic rate has a very large effect on weight loss. The right amount of exercise per day helps to increase the body's basal metabolic rate, while dieting (extremely hunger strike) reduces the basal metabolic rate. The basal metabolic rate can be roughly calculated by sex, age, height and weight.</p>
+           <br>
+           <p>* This basic metabolic calculation tool is only applicable to the general situation. If you need to get the actual basal metabolism of your individual, please use NICE weight loss service.</p>
+        </div>
+        <h1>BMR</h1>
+        <div class="calcultor">
+           <div class="gender">
+              <div class="selector">
+                 <div class="calcultor-head1">
+                    <h2>Gender</h2>
+                 </div>
+                 <div class="calcultor-head2">
+                    <h2>Gender</h2>
+                 </div>
+                 <div class="gender-selector">
+                    <select id="gender">
+                       <option selected="true" disabled="disabled" value = "">Select-Your-Gender</option>
+                       <option value="5">Male</option>
+                       <option value="-161">Female</option>
+                    </select>
+                 </div>
+              </div>
+           </div>
+           <div class="age">
+              <div class="calcultor-head1">
+                 <h2>Age</h2>
+              </div>
+              <div class="calcultor-head2">
+                 <h2>Age</h2>
+              </div>
+              <input type="number" id="age" value="">
+           </div>
+           <div class="height">
+              <div class="calcultor-head1">
+                 <h2>Height</h2>
+              </div>
+              <div class="calcultor-head2">
+                 <h2>Height</h2>
+              </div>
+              <input type="number" id="height" value="">
+              <div class="h3">
+                 <h3>CM</h3>
+              </div>
+           </div>
+           <div class="weight">
+              <div class="calcultor-head1">
+                 <h2>Weight</h2>
+              </div>
+              <div class="calcultor-head2">
+                 <h2>Weight</h2>
+              </div>
+              <input type="number" id="weight" value="">
+              <div class="h3">
+                 <h3>KG</h3>
+              </div>
+           </div>
+        </div>
+        <div class="buttom">
+           <button onclick="BMR()">Calculate</button>
+        </div>
+        <div class="bmr-graphic">
+           <div class="graphic-bg">
+           </div>
+           <div class="graphc-after-cal">
+              <div id="chart"></div>
+           </div>
+           <div id="bmr-text">
+              <p>Your BMR is <ins id="value1">0000.00</ins> Cal</p>
+           </div>
+           <div id="bmr-text1">
+              <p>Your BMR is <ins id="value1-1">0000.00</ins> Cal</p>
+           </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="info">
+      <div id="fileimg">
+        <div id="closeBar">
+          <div id="closeButt" onclick="closefile()"></div>
+        </div>
+        <div id="inputWindow">
+          <div id="nameInput0">
+          </div>
+          <div id="nameInput">
+            <label for="name">User Name</label><br>
+            <input id="name" type="text" name="name" value=""><br>
+            <button onclick="openfile(1)">Log In</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="plan">
+      <div id="fileimg">
+        <div id="closeBar">
+          <div id="closeButt" onclick="closefile()"></div>
+        </div>
+        <h2 id="theory">Dietary Planner</h2>
+        <h2 id="blur-theory">Dietary Planner</h2>
+        <div id="planner">
+          <div id="main">
+            <h3>Main Food</h3>
+            <div id="mainf">
+              <select id="food1">
+              </select>
+              <select id="food2">
+              </select>
+              <select id="food3">
+              </select>
+              <select id="food4">
+              </select>
+              <select id="food5">
+              </select>
+            </div>
+            <div id="maing">
+              <input type="number" id="gram1" value="">
+              <input type="number" id="gram2" value="">
+              <input type="number" id="gram3" value="">
+              <input type="number" id="gram4" value="">
+              <input type="number" id="gram5" value="">
+            </div>
+            <div id="unitm">
+              <p>gram</p>
+              <p>gram</p>
+              <p>gram</p>
+              <p>gram</p>
+              <p>gram</p>
+            </div>
+          </div>
+          <div id="veg">
+            <h3>Vegie</h3>
+            <div id="vegf">
+              <select id="food6">
+              </select>
+              <select id="food7">
+              </select>
+              <select id="food8">
+              </select>
+              <select id="food9">
+              </select>
+              <select id="food10">
+              </select>
+            </div>
+            <div id="vegg">
+              <input type="number" id="gram6" value="">
+              <input type="number" id="gram7" value="">
+              <input type="number" id="gram8" value="">
+              <input type="number" id="gram9" value="">
+              <input type="number" id="gram10" value="">
+            </div>
+            <div id="unitv">
+              <p>gram</p>
+              <p>gram</p>
+              <p>gram</p>
+              <p>gram</p>
+              <p>gram</p>
+            </div>
+          </div>
+          <div id="fru">
+            <h3>Fruit</h3>
+            <div id="fruf">
+              <select id="food11">
+              </select>
+              <select id="food12">
+              </select>
+              <select id="food13">
+              </select>
+              <select id="food14">
+              </select>
+              <select id="food15">
+              </select>
+            </div>
+            <div id="frug">
+              <input type="number" id="gram11" value="">
+              <input type="number" id="gram12" value="">
+              <input type="number" id="gram13" value="">
+              <input type="number" id="gram14" value="">
+              <input type="number" id="gram15" value="">
+            </div>
+            <div id="unitf">
+              <p>gram</p>
+              <p>gram</p>
+              <p>gram</p>
+              <p>gram</p>
+              <p>gram</p>
+            </div>
+          </div>
+        </div>
+        <div id="calPlanner">
+          <button onclick="calPlanner()">Calculate</button>
+        </div>
+        <div id="cal-text">
+           <p>Diet Plan Total is <ins id="value2">0000.00</ins> Cal</p>
+        </div>
+        <div id="cal-text1">
+           <p>Diet Plan Total is <ins id="value2-1">0000.00</ins> Cal</p>
+        </div>
+        <div class="c-p-f-container">
+           <div class="c-p-f-bg">
+              <div class="datapool-bg">
+                <p>BMR</p>
+                <p>Total</p>
+                <!-- <p>Carbohydrate</p>
+                <p>Protein</p>
+                <p>Fat</p> -->
+              </div>
+              <div class="t-graphic-bg">
+                 <div class="c-bg">
+
+                 </div>
+                 <div class="c-bg">
+
+                 </div>
+                 <!-- <div class="c-bg">
+
+                 </div>
+                 <div class="c-bg">
+
+                 </div>
+                 <div class="c-bg">
+
+                 </div> -->
+              </div>
+           </div>
+           <div class="c-p-f">
+              <div class="datapool">
+                <p>BMR</p>
+                <p>Total</p>
+                <!-- <p>Carbohydrate</p>
+                <p>Protein</p>
+                <p>Fat</p> -->
+              </div>
+              <div class="t-graphic">
+                <div class="c">
+                   <div id="bmr-chart">
+
+                   </div>
+                </div>
+                <div class="c">
+                   <div id="total-chart">
+
+                   </div>
+                </div>
+                <!-- <div class="c">
+                    <div id="carb-chart">
+
+                    </div>
+                 </div>
+                 <div class="c">
+                    <div id="protein-chart">
+
+                    </div>
+                 </div>
+                 <div class="c">
+                    <div id="fat-chart">
+
+                    </div>
+                 </div> -->
+              </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div id="print">
+      <div id="fileimg">
+        <div id="closeBar">
+          <div id="closeButt" onclick="closefile()"></div>
+        </div>
+        <div id="generateButt">
+          <button onclick="printout()">Generate</button>
+        </div>
+        <div id="dataOutput">
+          <p id="output"></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="dock">
+      <div id="dock-bg"></div>
+      <div id="dock-icon">
+        <div id="graphic" onclick="openfile(0)">
+          <a></a>
+        </div>
+        <div id="graphic1" onclick="openfile(1)">
+          <a></a>
+        </div>
+        <div id="graphic2" onclick="openfile(2)">
+          <a></a>
+        </div>
+        <div id="graphic3" onclick="openfile(3)">
+          <a></a>
+        </div>
+      </div>
+    </div>
+    <div id="background-color-selector">
+      <div>
+        <div>
+          <img src="img/bg1s.jpg" alt="" onclick="bgselector(1)">
+        </div>
+        <div>
+          <img src="img/bg3s.jpg" alt="" onclick="bgselector(2)">
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="img/bg2s.jpg" alt="" onclick="bgselector(3)">
+        </div>
+        <div>
+          <img src="img/bg4s.jpg" alt="" onclick="bgselector(4)">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript">
+  function bgselector(bg){
+    bgimg1 = '<img src="img/bg1.jpg" alt="" onclick="closefile()">';
+    bgimg2 = '<img src="img/bg2.jpg" alt="" onclick="closefile()">';
+    bgimg3 = '<img src="img/bg3.jpg" alt="" onclick="closefile()">';
+    bgimg4 = '<img src="img/bg4.jpg" alt="" onclick="closefile()">';
+
+    switch (bg) {
+      case 1:
+        document.getElementById('windowbg').innerHTML = bgimg1;
+        break;
+      case 2:
+        document.getElementById('windowbg').innerHTML = bgimg3;
+        break;
+      case 3:
+        document.getElementById('windowbg').innerHTML = bgimg2;
+        break;
+      case 4:
+        document.getElementById('windowbg').innerHTML = bgimg4;
+        break;
+      default:
+        document.getElementById('windowbg').innerHTML = bgimg1;
+
+    }
+  }
+
+  function closefile(){
+    document.getElementById('file').style.display = "none";
+    document.getElementById('info').style.display = "none";
+    document.getElementById('print').style.display = "none";
+  }
+
+  function openfile(appWindow){
+    switch (appWindow) {
+      case 0:
+        document.getElementById('info').style.display = "block";
+        document.getElementById('file').style.display = "none";
+        document.getElementById('plan').style.display = "none";
+        document.getElementById('print').style.display = "none";
+        break;
+      case 1:
+        if (document.getElementById('name').value == "") {
+          alert("Please log in.")
+          document.getElementById('file').style.display = "none";
+          document.getElementById('info').style.display = "block";
+          document.getElementById('plan').style.display = "none";
+          document.getElementById('print').style.display = "none";
+        }else{
+        document.getElementById('file').style.display = "block";
+        document.getElementById('info').style.display = "none";
+        document.getElementById('plan').style.display = "none";
+        document.getElementById('print').style.display = "none";
+        }
+        break;
+      case 2:
+        if (document.getElementById('name').value == "") {
+          alert("Please log in.")
+          document.getElementById('file').style.display = "none";
+          document.getElementById('info').style.display = "block";
+          document.getElementById('plan').style.display = "none";
+          document.getElementById('print').style.display = "none";
+        }else{
+        document.getElementById('file').style.display = "none";
+        document.getElementById('info').style.display = "none";
+        document.getElementById('plan').style.display = "block";
+        document.getElementById('print').style.display = "none";
+        }
+        break;
+      case 3:
+        if (document.getElementById('name').value == "") {
+          alert("Please log in.")
+          document.getElementById('file').style.display = "none";
+          document.getElementById('info').style.display = "block";
+          document.getElementById('plan').style.display = "none";
+          document.getElementById('print').style.display = "none";
+        }else{
+        document.getElementById('print').style.display = "block";
+        document.getElementById('plan').style.display = "none";
+        document.getElementById('info').style.display = "none";
+        document.getElementById('file').style.display = "none";
+        }
+      default:
+
+    }
+  }
+
+  var val1 = 0;
+  function BMR() {
+    var x = document.getElementById("age").value;
+    var y = document.getElementById("height").value;
+    var z = document.getElementById("weight").value;
+    var w = document.getElementById("gender").value;
+
+    if (x == "" || y == "" || z == "" || w == "") {
+      alert("Please fill all the boxes");
+      return false;
+    } else {
+
+    val1 = document.getElementById("value1").innerHTML = z*10+6.25*y-5*x+Number(w);
+    val1 = document.getElementById("value1-1").innerHTML = z*10+6.25*y-5*x+Number(w);
+    var variable = val1/50;
+    document.getElementById('chart').style.width = variable + "%";
+    document.getElementById('bmr-text').style.display = "block";
+    document.getElementById('bmr-text1').style.display = "block";
+    }
+  }
+
+  function printout() {
+    var v = document.getElementById('name').value;
+    var x = document.getElementById("age").value;
+    var y = document.getElementById("height").value;
+    var z = document.getElementById("weight").value;
+    var w = document.getElementById("gender").value;
+    if (x == "" || y == "" || z == "" || w == "") {
+      alert("No available data");
+
+      document.getElementById('file').style.display = "block";
+      document.getElementById('info').style.display = "none";
+      document.getElementById('print').style.display = "none";
+
+      return false;
+
+    } else if (v ==""){
+      alert("No available data");
+
+      document.getElementById('file').style.display = "none";
+      document.getElementById('info').style.display = "block";
+      document.getElementById('print').style.display = "none";
+
+      return false;
+
+    }else {
+    document.getElementById('output').innerHTML =
+      document.getElementById('name').value + "<br>"
+      + "Age: " + document.getElementById('age').value + "<br>"
+      + "Height: " + document.getElementById('height').value + " CM" + "<br>"
+      + "Weight: " + document.getElementById('weight').value + " KG" + "<br>"
+      + "BMR: " + document.getElementById('value1').innerHTML + "<br>" + "<br>"
+      + "Your Dietary Plan" + "<br>"
+      + "......";
+
+    console.log(document.getElementById('output').innerHTML);
+    }
+  }
+
+  var x = "";
+  var y = "";
+  var z = "";
+  for (main in foods) {
+    if (foods[main].type == "main") {
+      x += "<option value=" + "'" + foods[main].calories + "/" + foods[main].carbohydrate + "/" + foods[main].protein + "/" + foods[main].fat + "'" + ">" + foods[main].name + "</option>";
+    }
+  }
+  for (veg in foods) {
+    if (foods[veg].type == "veg") {
+      y += "<option value=" + "'" + foods[veg].calories + "/" + foods[veg].carbohydrate + "/" + foods[veg].protein + "/" + foods[veg].fat + "'" + ">" + foods[veg].name + "</option>";
+    }
+  }
+  for (fru in foods) {
+    if (foods[fru].type == "fruit") {
+      z += "<option value=" + "'" + foods[fru].calories + "/" + foods[fru].carbohydrate + "/" + foods[fru].protein + "/" + foods[fru].fat + "'" + ">" + foods[fru].name + "</option>";
+    }
+  }
+
+  var empty = "<option value='' selected='true' disabled='disabled'>Select Food</option>";
+  document.getElementById("food1").innerHTML = empty + x;
+  document.getElementById("food2").innerHTML = empty + x;
+  document.getElementById("food3").innerHTML = empty + x;
+  document.getElementById("food4").innerHTML = empty + x;
+  document.getElementById("food5").innerHTML = empty + x;
+
+  document.getElementById("food6").innerHTML = empty + y;
+  document.getElementById("food7").innerHTML = empty + y;
+  document.getElementById("food8").innerHTML = empty + y;
+  document.getElementById("food9").innerHTML = empty + y;
+  document.getElementById("food10").innerHTML = empty + y;
+
+  document.getElementById("food11").innerHTML = empty + z;
+  document.getElementById("food12").innerHTML = empty + z;
+  document.getElementById("food13").innerHTML = empty + z;
+  document.getElementById("food14").innerHTML = empty + z;
+  document.getElementById("food15").innerHTML = empty + z;
+
+  // console.log(document.getElementById("food1").value);
+  // console.log(document.getElementById("food1").value.split('/')[0]);
+
+  var val2 = 0;
+  function calPlanner() {
+
+    var x1 = document.getElementById("food1").value.split('/')[0];
+    var x2 = document.getElementById("food2").value.split('/')[0];
+    var x3 = document.getElementById("food3").value.split('/')[0];
+    var x4 = document.getElementById("food4").value.split('/')[0];
+    var x5 = document.getElementById("food5").value.split('/')[0];
+    var x6 = document.getElementById("food6").value.split('/')[0];
+    var x7 = document.getElementById("food7").value.split('/')[0];
+    var x8 = document.getElementById("food8").value.split('/')[0];
+    var x9 = document.getElementById("food9").value.split('/')[0];
+    var x10 = document.getElementById("food10").value.split('/')[0];
+    var x11 = document.getElementById("food11").value.split('/')[0];
+    var x12 = document.getElementById("food12").value.split('/')[0];
+    var x13 = document.getElementById("food13").value.split('/')[0];
+    var x14 = document.getElementById("food14").value.split('/')[0];
+    var x15 = document.getElementById("food15").value.split('/')[0];
+
+    var y1 = document.getElementById("gram1").value;
+    var y2 = document.getElementById("gram2").value;
+    var y3 = document.getElementById("gram3").value;
+    var y4 = document.getElementById("gram4").value;
+    var y5 = document.getElementById("gram5").value;
+    var y6 = document.getElementById("gram6").value;
+    var y7 = document.getElementById("gram7").value;
+    var y8 = document.getElementById("gram8").value;
+    var y9 = document.getElementById("gram9").value;
+    var y10 = document.getElementById("gram10").value;
+    var y11 = document.getElementById("gram11").value;
+    var y12 = document.getElementById("gram12").value;
+    var y13 = document.getElementById("gram13").value;
+    var y14 = document.getElementById("gram14").value;
+    var y15 = document.getElementById("gram15").value;
+
+
+// value under this line become undefined, so far I couldnt find solution!!!
+    // var c1 = document.getElementById("food1").value.split('/')[1];
+    // var c2 = document.getElementById("food2").value.split('/')[1];
+    // var c3 = document.getElementById("food3").value.split('/')[1];
+    // var c4 = document.getElementById("food4").value.split('/')[1];
+    // var c5 = document.getElementById("food5").value.split('/')[1];
+    // var c6 = document.getElementById("food6").value.split('/')[1];
+    // var c7 = document.getElementById("food7").value.split('/')[1];
+    // var c8 = document.getElementById("food8").value.split('/')[1];
+    // var c9 = document.getElementById("food9").value.split('/')[1];
+    // var c10 = document.getElementById("food10").value.split('/')[1];
+    // var c11 = document.getElementById("food11").value.split('/')[1];
+    // var c12 = document.getElementById("food12").value.split('/')[1];
+    // var c13 = document.getElementById("food13").value.split('/')[1];
+    // var c14 = document.getElementById("food14").value.split('/')[1];
+    // var c15 = document.getElementById("food15").value.split('/')[1];
+    //
+    // var p1 = document.getElementById("food1").value.split('/')[2];
+    // var p2 = document.getElementById("food2").value.split('/')[2];
+    // var p3 = document.getElementById("food3").value.split('/')[2];
+    // var p4 = document.getElementById("food4").value.split('/')[2];
+    // var p5 = document.getElementById("food5").value.split('/')[2];
+    // var p6 = document.getElementById("food6").value.split('/')[2];
+    // var p7 = document.getElementById("food7").value.split('/')[2];
+    // var p8 = document.getElementById("food8").value.split('/')[2];
+    // var p9 = document.getElementById("food9").value.split('/')[2];
+    // var p10 = document.getElementById("food10").value.split('/')[2];
+    // var p11 = document.getElementById("food11").value.split('/')[2];
+    // var p12 = document.getElementById("food12").value.split('/')[2];
+    // var p13 = document.getElementById("food13").value.split('/')[2];
+    // var p14 = document.getElementById("food14").value.split('/')[2];
+    // var p15 = document.getElementById("food15").value.split('/')[2];
+    //
+    // var f1 = document.getElementById("food1").value.split('/')[3];
+    // var f2 = document.getElementById("food2").value.split('/')[3];
+    // var f3 = document.getElementById("food3").value.split('/')[3];
+    // var f4 = document.getElementById("food4").value.split('/')[3];
+    // var f5 = document.getElementById("food5").value.split('/')[3];
+    // var f6 = document.getElementById("food6").value.split('/')[3];
+    // var f7 = document.getElementById("food7").value.split('/')[3];
+    // var f8 = document.getElementById("food8").value.split('/')[3];
+    // var f9 = document.getElementById("food9").value.split('/')[3];
+    // var f10 = document.getElementById("food10").value.split('/')[3];
+    // var f11 = document.getElementById("food11").value.split('/')[3];
+    // var f12 = document.getElementById("food12").value.split('/')[3];
+    // var f13 = document.getElementById("food13").value.split('/')[3];
+    // var f14 = document.getElementById("food14").value.split('/')[3];
+    // var f15 = document.getElementById("food15").value.split('/')[3];
+    //
+    val2 = document.getElementById("value2").innerHTML = x1*y1/100+x2*y2/100+x3*y3/100+x4*y4/100+x5*y5/100+x6*y6/100+x7*y7/100+x8*y8/100+x9*y9/100+x10*y10/100+x11*y11/100+x12*y12/100+x13*y13/100+x14*y14/100+x15*y15/100;
+    val2 = document.getElementById("value2-1").innerHTML = x1*y1/100+x2*y2/100+x3*y3/100+x4*y4/100+x5*y5/100+x6*y6/100+x7*y7/100+x8*y8/100+x9*y9/100+x10*y10/100+x11*y11/100+x12*y12/100+x13*y13/100+x14*y14/100+x15*y15/100;
+    //
+    // var carbohydrate = c1*y1/100+c2*y2/100+c3*y3/100+c4*y4/100+c5*y5/100+c6*y6/100+c7*y7/100+c8*y8/100+c9*y9/100+c10*y10/100+c11*y11/100+c12*y12/100+c13*y13/100+c14*y14/100+c15*y15/100;
+    // var protein = p1*y1/100+p2*y2/100+p3*y3/100+p4*y4/100+p5*y5/100+p6*y6/100+p7*y7/100+p8*y8/100+p9*y9/100+p10*y10/100+p11*y11/100+p12*y12/100+p13*y13/100+p14*y14/100+p15*y15/100;
+    // var fat = f1*y1/100+f2*y2/100+f3*y3/100+f4*y4/100+f5*y5/100+f6*y6/100+f7*y7/100+f8*y8/100+f9*y9/100+f10*y10/100+f11*y11/100+f12*y12/100+f13*y13/100+f14*y14/100+f15*y15/100;
+    //
+    // var carb = carbohydrate/30;
+    // var prot = protein/30;
+    // var fa = fat/30;
+    var total = val2/30;
+    var bmr = val1/30;
+
+    // document.getElementById('carb-chart').style.width =  carb + "%";
+    // document.getElementById('protein-chart').style.width = prot + "%";
+    // document.getElementById('fat-chart').style.width = fa + "%";
+    document.getElementById('total-chart').style.width = total + "%";
+    document.getElementById('bmr-chart').style.width = bmr + "%";
+
+    document.getElementById("cal-text").style.display = "block";
+    document.getElementById("cal-text1").style.display = "block";
+
+  }
+
+</script>
+</html>

@@ -1,0 +1,738 @@
+body{
+  background-color: #222222;
+}
+
+.sec-1 {
+  width: 1280px;
+  height: 975px;
+  background-color: white;
+  position: relative;
+  margin: auto;
+}
+
+#background-color-selector {
+  width: 180px;
+  height: 180px;
+  background-color: pink;
+  position: fixed;
+  top: 160px;
+  left: 0px;
+}
+
+#background-color-selector div {
+  width: 90px;
+  height: 90px;
+  display: flex;
+}
+
+#window {
+  position: absolute;
+}
+
+#file {
+  position: absolute;
+  width: 1140px;
+  height: 800px;
+  background: white;
+  position: relative;
+  margin: auto;
+  top: 40px;
+  border: solid 1px white;
+  display: none;
+  background-image: url('../img/innerbg1.jpg');
+  background-repeat: no-repeat;
+  background-position: top,center;
+}
+
+#info {
+  position: absolute;
+  width: 1140px;
+  height: 800px;
+  background: white;
+  position: relative;
+  margin: auto;
+  top: 40px;
+  border: solid 1px white;
+  display: none;
+  background-image: url('../img/innerbg1.jpg');
+  background-repeat: no-repeat;
+  background-position: top,center;
+}
+
+#plan {
+  position: absolute;
+  width: 1140px;
+  height: 800px;
+  background: white;
+  position: relative;
+  margin: auto;
+  top: 40px;
+  border: solid 1px white;
+  display: none;
+  background-image: url('../img/innerbg1.jpg');
+  background-repeat: no-repeat;
+  background-position: top,center;
+}
+
+#print {
+  position: absolute;
+  width: 1140px;
+  height: 800px;
+  background: white;
+  position: relative;
+  margin: auto;
+  top: 40px;
+  border: solid 1px white;
+  display: none;
+  background: #244444;
+}
+
+#inputWindow {
+  width: 500px;
+  height: 200px;
+  position: relative;
+  margin: auto;
+  top: 260px;
+}
+
+#nameInput0 {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  background: gray;
+  border-radius: 20px;
+  opacity: 0.2;
+}
+
+#nameInput {
+  width: 440px;
+  height: 100px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  text-align: center;
+}
+
+#nameInput label {
+  font-size: 20px;
+  color: white;
+}
+
+#nameInput input{
+  font-size: 20px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+#nameInput button{
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+#closeBar {
+  width: 1140px;
+  height: 20px;
+  background: white;
+}
+
+#closeButt{
+  width: 14px;
+  height: 14px;
+  border-radius: 10px;
+  background-color: red;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+
+#theory {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 100px;
+  left: 120px;
+}
+
+#fileimg h1 {
+  position: absolute;
+  top: 220px;
+  left: 450px;
+  color: #cccccc;
+  font-size: 250px;
+  font-weight: bolder;
+  opacity: 0.5;
+  filter: blur(20px);
+}
+
+#blur-theory {
+   filter: blur(8px);
+   color: white;
+   font-size: 40px;
+   font-weight: bold;
+   position: absolute;
+   top: 100px;
+   left: 120px;
+}
+
+#paragraph {
+   width: 900px;
+   position: absolute;
+   left: 120px;
+   top: 180px;
+   color: white;
+   font-size: 13px;
+   font-weight: 100;
+}
+
+.calcultor {
+   width: 900px;
+   display: flex;
+   position: relative;
+   top: 400px;
+   left: 120px;
+}
+
+.gender {
+   width: 225px;
+   height: 150px;
+}
+
+.gender-selector select {
+   height: 40px;
+   width: 200px;
+   font-size: 18px;
+   position: absolute;
+   top: 100px;
+}
+
+.age {
+   width: 225px;
+   height: 140px;
+   position: relative;
+   background-color: #2993fe;
+   border-top: 5px solid #2993fe;
+   border-bottom: 5px solid #2993fe;
+}
+
+.age input {
+   width: 130px;
+   border: none;
+   background: transparent;
+   border-bottom: 5px solid #fff;
+   outline: none;
+   font-size: 50px;
+   font-weight: bold;
+   position: absolute;
+   bottom: 0px;
+}
+
+.height {
+   width: 225px;
+   height: 140px;
+   position: relative;
+   background-color: #412248;
+   border-top: 5px solid #412248;
+   border-bottom: 5px solid #412248;
+}
+
+.height input {
+   width: 130px;
+   border: none;
+   background: transparent;
+   border-bottom: 5px solid #fff;
+   outline: none;
+   font-size: 50px;
+   font-weight: bold;
+   position: absolute;
+   bottom: 0px;
+}
+
+.weight {
+   width: 225px;
+   height: 140px;
+   position: relative;
+   background-color: #141235;
+   border-top: 5px solid #141235;
+   border-bottom: 5px solid #141235;
+}
+
+
+.weight input {
+   width: 130px;
+   border: none;
+   background: transparent;
+   border-bottom: 5px solid #fff;
+   outline: none;
+   font-size: 50px;
+   font-weight: bold;
+   position: absolute;
+   bottom: 0px;
+}
+
+.calcultor-head1 {
+   position: absolute;
+   left: 10px;
+}
+
+.calcultor-head2 {
+   position: absolute;
+   left: 10px;
+}
+
+.calcultor-head1 h2 {
+   color: white;
+   font-size: 40px;
+   font-weight: bold;
+   filter: blur(8px);
+}
+
+.calcultor-head2 h2 {
+   color: white;
+   font-size: 40px;
+   font-weight: bold;
+}
+
+.h3 {
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+}
+
+.h3 h3{
+   font-size: 50px;
+}
+
+.buttom {
+   width: 1140px;
+   height: 50px;
+   position: relative;
+   top: 420px;
+}
+
+.buttom button {
+   width: 80px;
+   height: 30px;
+   border-radius: 10px;
+   font-size: 15px;
+   position: absolute;
+   left: 530px;
+}
+
+.bmr-graphic {
+   width: 900px;
+   height: 200px;
+   position: relative;
+   top: 480px;
+   left: 120px;
+}
+
+.graphic-bg {
+   background-color: #cccccc;
+   width: 900px;
+   height: 10px;
+   border-radius: 30px;
+   position: absolute;
+}
+
+#chart {
+   border-radius: 30px;
+   background-color: #2ecc71;
+   width: 0%;
+   height: 100%;
+}
+
+.graphc-after-cal {
+   width: 900px;
+   height: 10px;
+   position: absolute;
+   border-radius: 30px;
+
+}
+
+#bmr-text {
+   position: absolute;
+   width: 900px;
+   text-align: center;
+   top: 20px;
+   display: none;
+}
+
+#bmr-text p {
+   font-size: 30px;
+   color: white;
+   font-weight: normal;
+}
+
+#bmr-text1 {
+   position: absolute;
+   width: 900px;
+   text-align: center;
+   top: 20px;
+   display: none;
+}
+
+#bmr-text1 p {
+   font-size: 30px;
+   color: white;
+   font-weight: normal;
+   filter: blur(6px);
+}
+
+#value1 {
+   color: pink;
+   text-decoration: none;
+}
+
+#value1-1 {
+   color: pink;
+   text-decoration: none;
+}
+
+#generateButt {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+
+#output {
+  position: absolute;
+  top: 120px;;
+  left: 30px;
+  font-size: 30px;
+  color: yellow;
+  line-height: 1.6;
+}
+
+#dock {
+  width: 370px;
+  height: 120px;
+  position: absolute;
+  bottom: 10px;
+  left: 485px;
+}
+
+#dock-bg {
+  width: 370px;
+  height: 120px;
+  border-radius: 20px;
+  background-color: gray;
+  opacity: 0.6;
+}
+
+#dock-icon {
+  width: 350px;
+  height: 90px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  top: -105px;
+}
+
+#graphic {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  background-image: url('../img/info_icon.jpg')
+}
+
+#graphic1 {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  background-image: url('../img/bmr_icon.jpg')
+}
+
+#graphic2 {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  background-image: url('../img/print_icon.jpg')
+}
+
+#graphic3 {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  background-image: url('../img/print_icon.jpg')
+}
+
+#main h3{
+  position: absolute;
+  left: 120px;
+  top: 180px;
+  color: white;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#mainf {
+  position: absolute;
+  left: 120px;
+  top: 220px;
+}
+
+#mainf select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#maing {
+  position: absolute;
+  left: 240px;
+  top: 220px;
+  color: white;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#maing input {
+  display: block;
+  margin-bottom: 8px;
+  width: 50px;
+}
+
+#unitm {
+  position: absolute;
+  left: 300px;
+  top: 220px;
+  color: white;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#unitm p {
+  margin-bottom: 17px;
+}
+
+#veg h3{
+  position: absolute;
+  left: 420px;
+  top: 180px;
+  color: white;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#vegf {
+  position: absolute;
+  left: 420px;
+  top: 220px;
+}
+
+#vegf select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#vegg {
+  position: absolute;
+  left: 520px;
+  top: 220px;
+  color: white;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#veg input {
+  display: block;
+  margin-bottom: 8px;
+  width: 50px;
+}
+
+#unitv {
+  position: absolute;
+  left: 580px;
+  top: 220px;
+  color: white;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#unitv p {
+  margin-bottom: 17px;
+}
+
+#fru h3{
+  position: absolute;
+  left: 720px;;
+  top: 180px;
+  color: white;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#fruf {
+  position: absolute;
+  left: 720px;
+  top: 220px;
+}
+
+#fruf select {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#frug {
+  position: absolute;
+  left: 820px;
+  top: 220px;
+  color: white;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#frug input {
+  display: block;
+  margin-bottom: 8px;
+  width: 50px;
+}
+
+#unitf {
+  position: absolute;
+  left: 880px;
+  top: 220px;
+  color: white;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#unitf p {
+  margin-bottom: 17px;
+}
+
+#calPlanner {
+  width: 1140px;
+  height: 50px;
+  position: relative;
+  top: 380px;
+}
+
+#calPlanner button {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 15px;
+  position: absolute;
+  left: 530px;
+}
+
+#cal-text {
+  position: absolute;
+  width: 900px;
+  text-align: center;
+  left: 120px;
+  top: 450px;
+  display: none;
+}
+
+#cal-text p {
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+}
+
+#cal-text1 {
+  position: absolute;
+  width: 900px;
+  text-align: center;
+  left: 120px;
+  top: 450px;
+  display: none;
+}
+
+#cal-text1 p {
+  font-size: 30px;
+  color: white;
+  font-weight: normal;
+  filter: blur(6px);
+}
+
+.c-p-f-container {
+  position: absolute;
+  left: 120px;
+  top: 520px;
+}
+
+.datapool-bg p {
+   font-size: 20px;
+   color: white;
+   filter: blur(4px);
+}
+
+.c-p-f p {
+   font-size: 20px;
+   color: white;
+}
+
+.c-p-f-bg {
+   width: 900px;
+   position: absolute;
+   display: flex;
+}
+
+.c-p-f {
+   width: 900px;
+   position: absolute;
+   display: flex;
+}
+
+.t-graphic-bg {
+  position: absolute;
+  left: 200px;
+  width: 700px;
+}
+
+.t-graphic {
+  position: absolute;
+  left: 200px;
+  width: 700px;
+}
+
+.c-bg {
+  width: 700px;
+  height: 10px;
+  background-color: #cccccc;
+  border-radius: 30px;
+  margin-bottom: 12px;
+}
+
+.c {
+  width: 700px;
+  height: 10px;
+  background-color: #cccccc;
+  border-radius: 30px;
+  margin-bottom: 12px;
+}
+
+#bmr-chart {
+  border-radius: 30px;
+  background-color: #2ecc71;
+  width: 0%;
+  height: 100%;
+}
+#total-chart {
+  border-radius: 30px;
+  background-color: #2ecc71;
+  width: 0%;
+  height: 100%;
+}
+#carb-chart {
+  border-radius: 30px;
+  background-color: #2ecc71;
+  width: 0%;
+  height: 100%;
+}
+#protein-chart {
+  border-radius: 30px;
+  background-color: #2ecc71;
+  width: 0%;
+  height: 100%;
+}
+#fat-chart {
+  border-radius: 30px;
+  background-color: #2ecc71;
+  width: 0%;
+  height: 100%;
+}
