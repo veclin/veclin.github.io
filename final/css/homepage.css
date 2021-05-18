@@ -405,15 +405,15 @@ body{
 }
 
 #dock {
-  width: 370px;
+  width: 460px;
   height: 120px;
   position: absolute;
   bottom: 10px;
-  left: 485px;
+  left: 425px;
 }
 
 #dock-bg {
-  width: 370px;
+  width: 460px;
   height: 120px;
   border-radius: 20px;
   background-color: gray;
@@ -421,7 +421,7 @@ body{
 }
 
 #dock-icon {
-  width: 350px;
+  width: 425px;
   height: 90px;
   position: relative;
   display: flex;
@@ -448,7 +448,7 @@ body{
   width: 90px;
   height: 90px;
   border-radius: 20px;
-  background-image: url('../img/print_icon.jpg')
+  background-image: url('../img/dp_icon.jpg')
 }
 
 #graphic3 {
