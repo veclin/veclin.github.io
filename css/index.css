@@ -34,7 +34,7 @@
 }
 
 .menu {
-    width: 300px;
+    width: 400px;
     height: 97px;
     position: absolute;
     top: 0;
@@ -54,12 +54,18 @@
     color: black;
 }
 
-.menu a:focus {
+.menu a:hover {
     border-bottom: solid 1px black
 }
 
-.menu a:hover {
-    border-bottom: solid 1px black
+#contactme {
+    color: white;
+    background-color: black;
+    padding: 20px 35px;
+}
+
+#contactme:hover {
+    background-color: #222222;
 }
 
 .intro {
@@ -201,10 +207,6 @@
 .projects a {
     text-decoration: none;
     color: black;
-}
-
-.projects a:focus {
-    border-bottom: solid 1px black
 }
 
 .projects a:hover {

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Ve C. Lin</title>
         <link rel="stylesheet" href="css/about.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="">
@@ -15,6 +16,7 @@
                     <div class="menu">
                         <p><a id="work" href="index.html">Work</a></p>
                         <p><a id="aboutme" href="about.html">About Me</a></p>
+                        <p><a id="contactme">Contact</a></p>
                     </div>
                 </div>
             </div>
@@ -53,4 +55,15 @@ The passage experienced a surge in popularity during the 1960s when Letraset use
         </div>
 
     </body>
+
+    <script>
+        $(document).ready(function () {
+            $("#contactme").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#contact111").offset().top
+                }, 800);
+            });
+        });
+
+    </script>
 </html>

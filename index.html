@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Ve C. Lin</title>
         <link rel="stylesheet" href="css/index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="">
@@ -15,6 +16,7 @@
                     <div class="menu">
                         <p><a id="work" href="index.html">Work</a></p>
                         <p><a id="aboutme" href="about.html">About Me</a></p>
+                        <p><a id="contactme">Contact</a></p>
                     </div>
                 </div>
             </div>
@@ -58,7 +60,7 @@
 
         <div class="">
             <div class="bottom">
-                <div class="contact">
+                <div class="contact" id="contact111">
                     <p1>Ve Lin</p1>
                     <p>veclin1311@gmail.com</p>
                 </div>
@@ -72,4 +74,15 @@
         </div>
 
     </body>
+
+    <script>
+        $(document).ready(function () {
+            $("#contactme").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#contact111").offset().top
+                }, 800);
+            });
+        });
+
+    </script>
 </html>
