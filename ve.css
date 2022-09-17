@@ -1,0 +1,212 @@
+:root {
+    --intro: 100px;
+    --work1: 480px;
+    --work1sub: 1280px;
+    --work2: 1540px;
+    --worksub2: 2340px;
+    --bottom: 2600px;
+}
+
+.nav {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 300px;
+    height: 97px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background-color: #F1f1f1;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+#name {
+    font: bold 30px Arial, sans-serif;
+}
+
+.menu {
+    width: 300px;
+    height: 97px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    text-align: right;
+    background-color: #f1f1f1;
+}
+
+.menu p {
+    margin: 40px 0px 0px 30px;
+    display: inline-block;
+    font: 18px Arial, sans-serif;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:focus {
+    border-bottom: solid 1px black
+}
+
+.menu a:hover {
+    border-bottom: solid 1px black
+}
+
+.intro {
+    width: 100%;
+    height: 380px;
+    position: absolute;
+    top: var(--intro);
+    left: 0px;
+}
+
+.intro p {
+    width: 80%;
+    margin: auto;
+    padding: 100px 50px 0 50px;
+    font:  50px Arial, sans-serif;
+}
+
+.work {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: var(--work1);
+    border: solid 1px red;
+}
+
+.img {
+    height: 700px;
+    margin: 50px;
+    background-color: #f1f1f1;
+}
+
+.worksub {
+    width: 100%;
+    height: 260px;
+    position: absolute;
+    top: var(--work1sub);
+    border: solid 1px red;
+}
+
+.worksub-cont {
+    width: 70%;
+    background-color: #f1f1f1;
+    display: inline-block;
+}
+
+.worksub-cont p1 {
+    margin: 0 0 0 50px;
+    font:  50px Arial, sans-serif;
+}
+
+.worksub-cont p {
+    margin: 20px 0 0 50px;
+    font: 18px Arial, sans-serif;
+}
+
+.worksub-button {
+    height: 200px;
+    margin: 40px 50px 0 0;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+
+.worksub-button a {
+    text-align: center;
+    text-decoration: none;
+    font: bold 18px Arial, sans-serif;
+    padding: 20px 50px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    left: 0px;
+}
+
+.worksub-button a:hover {
+    background-color: #222222;
+}
+
+.work2 {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: var(--work2);
+    border: solid 1px red;
+}
+
+.worksub2 {
+    width: 100%;
+    height: 260px;
+    position: absolute;
+    top: var(--worksub2);
+    border: solid 1px red;
+}
+
+.bottom {
+    width: 100%;
+    height: 260px;
+    position: absolute;
+    top: var(--bottom);
+    left: 0px;
+    border: solid 1px red;
+}
+
+.contact {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #f1f1f1;
+}
+
+.contact p1 {
+    font:  bold 30px Arial, sans-serif;
+}
+
+.contact p {
+    font: 18px Arial, sans-serif;
+}
+
+.projects {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    text-align: right;
+    background-color: #f1f1f1;
+}
+
+.projects p1 {
+    font:  bold 30px Arial, sans-serif;
+}
+
+.projects p {
+    font: 18px Arial, sans-serif;
+}
+
+.projects a {
+    text-decoration: none;
+    color: black;
+}
+
+.projects a:focus {
+    border-bottom: solid 1px black
+}
+
+.projects a:hover {
+    border-bottom: solid 1px black
+}
