@@ -4,7 +4,11 @@
     --work1sub: 1280px;
     --work2: 1540px;
     --worksub2: 2340px;
-    --bottom: 2600px;
+    --work3: 2600px;
+    --worksub3: 3400px;
+    --work4: 3660px;
+    --worksub4: 4460px;
+    --bottom: 4800px;
 }
 
 .nav {
@@ -21,7 +25,6 @@
     position: absolute;
     top: 0;
     left: 30px;
-    background-color: #F1f1f1;
 }
 
 .logo a {
@@ -40,7 +43,6 @@
     top: 0;
     right: 30px;
     text-align: right;
-    background-color: #f1f1f1;
 }
 
 .menu p {
@@ -88,7 +90,6 @@
     height: 800px;
     position: absolute;
     top: var(--work1);
-    border: solid 1px red;
 }
 
 .img {
@@ -97,23 +98,37 @@
     background-color: #f1f1f1;
 }
 
+.img img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (min-width: 1440px) {
+    .img img {
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}
+
+
 .worksub {
     width: 100%;
     height: 260px;
     position: absolute;
     top: var(--work1sub);
-    border: solid 1px red;
 }
 
 .worksub-cont {
     width: 70%;
-    background-color: #f1f1f1;
     display: inline-block;
 }
 
 .worksub-cont p1 {
     margin: 0 0 0 50px;
-    font:  50px Arial, sans-serif;
+    font:  bold 40px Arial, sans-serif;
 }
 
 .worksub-cont p {
@@ -149,7 +164,6 @@
     height: 800px;
     position: absolute;
     top: var(--work2);
-    border: solid 1px red;
 }
 
 .worksub2 {
@@ -157,7 +171,34 @@
     height: 260px;
     position: absolute;
     top: var(--worksub2);
-    border: solid 1px red;
+}
+
+.work3 {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: var(--work3);
+}
+
+.worksub3 {
+    width: 100%;
+    height: 260px;
+    position: absolute;
+    top: var(--worksub3);
+}
+
+.work4 {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: var(--work4);
+}
+
+.worksub4 {
+    width: 100%;
+    height: 260px;
+    position: absolute;
+    top: var(--worksub4);
 }
 
 .bottom {
@@ -166,7 +207,7 @@
     position: absolute;
     top: var(--bottom);
     left: 0px;
-    border: solid 1px red;
+    background-color: #ebebeb;
 }
 
 .contact {
@@ -175,7 +216,6 @@
     position: absolute;
     top: 50px;
     left: 50px;
-    background-color: #f1f1f1;
 }
 
 .contact p1 {
@@ -193,7 +233,6 @@
     top: 50px;
     right: 50px;
     text-align: right;
-    background-color: #f1f1f1;
 }
 
 .projects p1 {

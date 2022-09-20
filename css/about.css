@@ -17,7 +17,6 @@
     position: absolute;
     top: 0;
     left: 30px;
-    background-color: #F1f1f1;
 }
 
 .logo a {
@@ -36,7 +35,6 @@
     top: 0;
     right: 30px;
     text-align: right;
-    background-color: #f1f1f1;
 }
 
 .menu p {
@@ -111,7 +109,7 @@
     position: absolute;
     top: var(--bottom);
     left: 0px;
-    border: solid 1px red;
+    background-color: #ebebeb;
 }
 
 .contact {
@@ -120,7 +118,6 @@
     position: absolute;
     top: 50px;
     left: 50px;
-    background-color: #f1f1f1;
 }
 
 .contact p1 {
@@ -138,7 +135,6 @@
     top: 50px;
     right: 50px;
     text-align: right;
-    background-color: #f1f1f1;
 }
 
 .projects p1 {

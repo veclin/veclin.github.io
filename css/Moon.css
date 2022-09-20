@@ -1,0 +1,495 @@
+:root {
+    --header: 100px;
+    --text-description: 800px;
+    --PAbout: 1100px;
+    --pholder: 1400px;
+    --pholder1: 2650px;
+    --pholder2: 3100px;
+    --pholder3: 3550px;
+    --pholder4: 4000px;
+    --pholder5: 4450px;
+    --pholder6: 4900px;
+    --pholder7: 5350px;
+    --pholder8: 5800px;
+    --pholder9: 6250px;
+    --pholder10: 6700px;
+    --pholder11: 7150px;
+    --bottom: 7700px;
+}
+
+.nav {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 300px;
+    height: 97px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+#name {
+    font: bold 30px Arial, sans-serif;
+}
+
+.menu {
+    width: 400px;
+    height: 97px;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    text-align: right;
+}
+
+.menu p {
+    margin: 40px 0px 0px 30px;
+    display: inline-block;
+    font: 18px Arial, sans-serif;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+    border-bottom: solid 1px black
+}
+
+#contactme {
+    color: white;
+    background-color: black;
+    padding: 20px 35px;
+}
+
+#contactme:hover {
+    background-color: #222222;
+}
+
+.header-img {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: var(--header);
+    left: 0px;
+}
+
+.header-img img {
+    max-width: 100%;
+    height: 700px;
+    object-position: center;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1440px) {
+    .header-img img {
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}
+
+.text-description {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: var(--text-description);
+}
+
+.text-left {
+    width: 50%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.text-left p1 {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font:  bold 40px Arial, sans-serif;
+}
+
+.text-left p2 {
+    position: absolute;
+    left: 50px;
+    top: 120px;
+    font: bold 18px Arial, sans-serif;
+}
+
+.text-right {
+    width: 50%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.text-right p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 95px 50px 0 0;
+    font: 18px/36px Arial, sans-serif;
+}
+
+.PAbout {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: var(--PAbout);
+    left: 0;
+}
+
+.sectionholder {
+    width: 90%;
+    height: 500px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.section1 {
+    width: 30%;
+    height: 500px;
+    border-top: solid 1px black;
+    position: relative;
+}
+
+.section1 h1 {
+    position: relative;
+    top: 30px;
+    font: bold 18px/36px Arial, sans-serif;
+}
+
+.section1 h2 {
+    position: relative;
+    top: 30px;
+    font: 16px/32px Arial, sans-serif;
+}
+
+.section1 p {
+    position: relative;
+    top: 30px;
+    left: 20px;
+    font: 16px/32px  Arial, sans-serif;
+}
+
+.pholder {
+    width: 100%;
+    height: 1200px;
+    position: absolute;
+    top: var(--pholder);
+}
+
+.presentation {
+    height: 1100px;
+    margin: 50px;
+}
+
+.presentation img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 1440px) {
+    .presentation img {
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}
+
+.pholder1 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: var(--pholder1);
+}
+
+.presentation1 {
+    height: 400px;
+}
+
+.presentation1 img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.pholder2 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: var(--pholder2);
+}
+
+.presentation2 {
+    height: 400px;
+}
+
+.presentation2 img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.pholder3 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: var(--pholder3);
+}
+
+.presentation3 {
+    height: 400px;
+}
+
+.presentation3 img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.pholder4 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: var(--pholder4);
+}
+
+.presentation4 {
+    height: 400px;
+}
+
+.presentation4 img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.pholder5 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: var(--pholder5);
+}
+
+.presentation5 {
+    height: 400px;
+}
+
+.presentation5 img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.pholder6 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: var(--pholder6);
+}
+
+.presentation6 {
+    height: 400px;
+}
+
+.presentation6 img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.pholder7 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: var(--pholder7);
+}
+
+.presentation7 {
+    height: 400px;
+}
+
+.presentation7 img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.pholder8 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: var(--pholder8);
+}
+
+.presentation8 {
+    height: 400px;
+}
+
+.presentation8 img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.pholder9 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: var(--pholder9);
+}
+
+.presentation9 {
+    height: 400px;
+}
+
+.presentation9 img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.pholder10 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: var(--pholder10);
+}
+
+.presentation10 {
+    height: 400px;
+}
+
+.presentation10 img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.pholder11 {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: var(--pholder11);
+}
+
+.presentation11 {
+    height: 400px;
+}
+
+.presentation11 img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+.bottom {
+    width: 100%;
+    height: 260px;
+    position: absolute;
+    top: var(--bottom);
+    left: 0px;
+    background-color: #ebebeb;
+}
+
+.contact {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.contact p1 {
+    font:  bold 30px Arial, sans-serif;
+}
+
+.contact p {
+    font: 18px Arial, sans-serif;
+}
+
+.projects {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    text-align: right;
+}
+
+.projects p1 {
+    font:  bold 30px Arial, sans-serif;
+}
+
+.projects p {
+    font: 18px Arial, sans-serif;
+}
+
+.projects a {
+    text-decoration: none;
+    color: black;
+}
+
+.projects a:hover {
+    border-bottom: solid 1px black
+}
