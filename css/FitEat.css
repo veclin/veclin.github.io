@@ -3,18 +3,13 @@
     --text-description: 800px;
     --PAbout: 1100px;
     --pholder: 1400px;
-    --pholder1: 2650px;
-    --pholder2: 3100px;
-    --pholder3: 3550px;
-    --pholder4: 4000px;
-    --pholder5: 4450px;
-    --pholder6: 4900px;
-    --pholder7: 5350px;
-    --pholder8: 5800px;
-    --pholder9: 6250px;
-    --pholder10: 6700px;
-    --pholder11: 7150px;
-    --bottom: 7700px;
+    --proposal: 2400px;
+    --showcase: 3500px;
+    --showcase1: 4300px;
+    --showcase2: 5100px;
+    --showcase3: 5900px;
+    --showcase4: 6700px;
+    --bottom: 7500px;
 }
 
 .nav {
@@ -101,7 +96,7 @@
 
 .text-description {
     width: 100%;
-    height: 400px;
+    height: 500px;
     position: absolute;
     top: var(--text-description);
     left: 0px;
@@ -109,7 +104,7 @@
 
 .text-left {
     width: 50%;
-    height: 400px;
+    height: 500px;
     position: absolute;
     top: 0;
     left: 0;
@@ -131,7 +126,7 @@
 
 .text-right {
     width: 50%;
-    height: 400px;
+    height: 500px;
     position: absolute;
     top: 0;
     right: 0;
@@ -189,14 +184,14 @@
 
 .pholder {
     width: 100%;
-    height: 1200px;
+    height: 1000px;
     position: absolute;
     top: var(--pholder);
     left: 0px;
 }
 
 .presentation {
-    height: 1100px;
+    height: 900px;
     margin: 50px;
 }
 
@@ -214,246 +209,191 @@
     }
 }
 
-.pholder1 {
+.proposal {
     width: 100%;
-    height: 400px;
+    height: 1050px;
     position: absolute;
-    top: var(--pholder1);
+    top: var(--proposal);
     left: 0px;
 }
 
-.presentation1 {
-    height: 400px;
+.proposalin {
+    width: 80%;
+    height: 1050px;
+    margin: auto;
+    position: relative;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
 }
 
-.presentation1 img {
+.proposalin h1 {
+    position: relative;
+    top: 30px;
+    font:  bold 40px/80px Arial, sans-serif;
+}
+
+.proposalin h2 {
+    position: relative;
+    top: 30px;
+    font:   25px/40px Arial, sans-serif;
+}
+
+.proposalin p1 {
+    position: relative;
+    top: 30px;
+    font:   bold 20px/40px Arial, sans-serif;
+}
+
+.proposalin p {
+    position: relative;
+    top: 30px;
+    left: 20px;
+    font:   20px/30px Arial, sans-serif;
+}
+
+.colorholder {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    top: 30px;
+}
+
+.colorholder div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pro-white {
+    background-color: #ffffff;
+}
+
+.pro-yellow {
+    background-color: #ffc50c;
+}
+
+.pro-green {
+    background-color: #46b969;
+}
+
+.pro-black {
+    background-color: #222222;
+}
+
+.questionnaire {
+
+}
+
+.showcase {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: var(--showcase);
+    left: 0px;
+}
+
+.showcaseholder {
+    height: 700px;
+    margin: 50px;
+}
+
+.showcaseholder img {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
 }
 
-.pholder2 {
+.showcase1 {
     width: 100%;
-    height: 400px;
+    height: 800px;
     position: absolute;
-    top: var(--pholder2);
+    top: var(--showcase1);
     left: 0px;
 }
 
-.presentation2 {
-    height: 400px;
+.showcaseholder1 {
+    height: 700px;
+    margin: 50px;
 }
 
-.presentation2 img {
+.showcaseholder1 img {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
 }
 
-.pholder3 {
+.showcase2 {
     width: 100%;
-    height: 400px;
+    height: 800px;
     position: absolute;
-    top: var(--pholder3);
+    top: var(--showcase2);
     left: 0px;
 }
 
-.presentation3 {
-    height: 400px;
+.showcaseholder2 {
+    height: 700px;
+    margin: 50px;
 }
 
-.presentation3 img {
+.showcaseholder2 img {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
 }
 
-.pholder4 {
+.showcase3 {
     width: 100%;
-    height: 400px;
+    height: 800px;
     position: absolute;
-    top: var(--pholder4);
+    top: var(--showcase3);
     left: 0px;
 }
 
-.presentation4 {
-    height: 400px;
+.showcaseholder3 {
+    height: 700px;
+    margin: 50px;
 }
 
-.presentation4 img {
+.showcaseholder3 img {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
 }
 
-.pholder5 {
+.showcase4 {
     width: 100%;
-    height: 400px;
+    height: 800px;
     position: absolute;
-    top: var(--pholder5);
+    top: var(--showcase4);
     left: 0px;
 }
 
-.presentation5 {
-    height: 400px;
+.showcaseholder4 {
+    height: 700px;
+    margin: 50px;
 }
 
-.presentation5 img {
+.showcaseholder4 img {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
-}
-
-.pholder6 {
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    top: var(--pholder6);
-    left: 0px;
-}
-
-.presentation6 {
-    height: 400px;
-}
-
-.presentation6 img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
-}
-
-.pholder7 {
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    top: var(--pholder7);
-    left: 0px;
-}
-
-.presentation7 {
-    height: 400px;
-}
-
-.presentation7 img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
-}
-
-.pholder8 {
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    top: var(--pholder8);
-    left: 0px;
-}
-
-.presentation8 {
-    height: 400px;
-}
-
-.presentation8 img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
-}
-
-.pholder9 {
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    top: var(--pholder9);
-    left: 0px;
-}
-
-.presentation9 {
-    height: 400px;
-}
-
-.presentation9 img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
-}
-
-.pholder10 {
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    top: var(--pholder10);
-    left: 0px;
-}
-
-.presentation10 {
-    height: 400px;
-}
-
-.presentation10 img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
-}
-
-.pholder11 {
-    width: 100%;
-    height: 400px;
-    position: absolute;
-    top: var(--pholder11);
-    left: 0px;
-}
-
-.presentation11 {
-    height: 400px;
-}
-
-.presentation11 img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.4);
 }
 
 .bottom {

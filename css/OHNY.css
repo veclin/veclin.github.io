@@ -91,6 +91,7 @@
     height: 400px;
     position: absolute;
     top: var(--text-description);
+    left: 0px;
 }
 
 .text-left {
@@ -178,6 +179,7 @@
     height: 1200px;
     position: absolute;
     top: var(--pholder);
+    left: 0px;
 }
 
 .presentation {
@@ -204,6 +206,7 @@
     height: 800px;
     position: absolute;
     top: var(--pholder1);
+    left: 0px;
 }
 
 .presentation1 {
@@ -224,6 +227,7 @@
     height: 800px;
     position: absolute;
     top: var(--pholder2);
+    left: 0px;
 }
 
 .presentation2 {
@@ -244,6 +248,7 @@
     height: 800px;
     position: absolute;
     top: var(--pholder3);
+    left: 0px;
 }
 
 .presentation3 {
@@ -264,6 +269,7 @@
     height: 800px;
     position: absolute;
     top: var(--pholder4);
+    left: 0px;
 }
 
 .presentation4 {
@@ -284,6 +290,7 @@
     height: 800px;
     position: absolute;
     top: var(--pholder5);
+    left: 0px;
 }
 
 .presentation5 {
@@ -304,6 +311,7 @@
     height: 800px;
     position: absolute;
     top: var(--pholder6);
+    left: 0px;
 }
 
 .presentation6 {
@@ -321,11 +329,11 @@
 
 .bottom {
     width: 100%;
-    height: 260px;
+    height: 320px;
     position: absolute;
     top: var(--bottom);
     left: 0px;
-    background-color: #ebebeb;
+    background-color: #e1e1e1;
 }
 
 .contact {

@@ -100,6 +100,7 @@
     height: 400px;
     position: absolute;
     top: var(--text-description);
+    left: 0px;
 }
 
 .text-left {
@@ -187,6 +188,7 @@
     height: 1200px;
     position: absolute;
     top: var(--pholder);
+    left: 0px;
 }
 
 .presentation {
@@ -213,6 +215,7 @@
     height: 1250px;
     position: absolute;
     top: var(--proposal);
+    left: 0px;
 }
 
 .proposalin {
@@ -283,6 +286,7 @@
     height: 400px;
     position: absolute;
     top: var(--showcase);
+    left: 0px;
 }
 
 .showcaseholder {
@@ -304,6 +308,7 @@
     height: 400px;
     position: absolute;
     top: var(--showcase1);
+    left: 0px;
 }
 
 .showcaseholder1 {
@@ -325,6 +330,7 @@
     height: 400px;
     position: absolute;
     top: var(--showcase2);
+    left: 0px;
 }
 
 .showcaseholder2 {
@@ -346,6 +352,7 @@
     height: 400px;
     position: absolute;
     top: var(--showcase3);
+    left: 0px;
 }
 
 .showcaseholder3 {
@@ -367,6 +374,7 @@
     height: 1200px;
     position: absolute;
     top: var(--showcase4);
+    left: 0px;
 }
 
 .showcaseholder4 {
@@ -393,6 +401,7 @@
     height: 1200px;
     position: absolute;
     top: var(--showcase5);
+    left: 0px;
 }
 
 .showcaseholder5 {
@@ -416,11 +425,11 @@
 
 .bottom {
     width: 100%;
-    height: 260px;
+    height: 320px;
     position: absolute;
     top: var(--bottom);
     left: 0px;
-    background-color: #ebebeb;
+    background-color: #e1e1e1;
 }
 
 .contact {
